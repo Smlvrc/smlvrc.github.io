@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Swiper CSS -->
+ 
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--home css-->
+<link rel="stylesheet" href="./assets/css/home.css">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- card css -->
+<link rel="stylesheet" href="./assets/css/cards.css">
+<!--responsive-->
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<!-- filter and card detail css -->
+<link rel="stylesheet" href="./assets/css/carddetail.css">
+<!-- font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+   <!-- header -->
+   <header style="background-image: none; height: 0px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+     <div class="container-fluid">
+       <div class="header-logo">
+        <a href="index.html"> <img src="./assets/images/df.png" alt=""></a>
+
+         
+       </div>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-mdb-toggle="collapse"
+         data-mdb-target="#navbarExample01"
+         aria-controls="navbarExample01"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+       >
+         <i class="fas fa-bars"></i>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarExample01">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item active">
+             <a class="nav-link" aria-current="page" href="#">Ana səhifə</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Haqqımızda</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Layihələr</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#"> Satış həlləri</a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" aria-current="page" href="#">Əlaqə</a>
+           </li>
+        
+         </ul>
+         <ul class="header-right">
+           <li><div id="icon" class="icon"> <i class="fa-solid fa-arrow-down"></i></div>
+             <div id="options" class="options">
+               <a data-value="tr-TR">Tr</a>
+               <a data-value="en-US">Eng</a>
+             </div></li>
+           <li class="header-num" ><a href="">*1006  </a></li>
+           <li><a href=""> <i class="fa-solid fa-heart"></i></a></li>
+           <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+         </ul>
+     </div>
+     </div>
+   </nav>
+   <!-- Navbar -->
+   
+     <!-- Background image -->
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <img src="./assets/images/west.webp" alt="">
+       <div class="slider-bottom">
+         <div class="slider-bottom-left"> 
+           <h3>Glorax</h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
+         </div>
+         <div class="slider-bottom-right">
+           <button> Выбрать апартаменты </button>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <img src="./assets/images/header2.webp" alt="">
+       <div class="slider-bottom">
+         <div class="slider-bottom-left"> 
+           <h3>Glorax</h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
+         </div>
+         <div class="slider-bottom-right">
+           <button> Выбрать апартаменты </button>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <img src="./assets/images/header1.webp" alt="">
+       <div class="slider-bottom">
+         <div class="slider-bottom-left"> 
+           <h3>Glorax</h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
+         </div>
+         <div class="slider-bottom-right" style="z-index: 3;">
+           <button> Выбрать апартаменты </button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+   </header>
+ 
+<div class="card-filter-detail">
+    <div class="filter-detail-container">
+        <div class="detail-slider-side">
+            <div class="swiper mySwiperslider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide selected" data-month="January"><img src="./assets/images/swiper1.PNG" alt=""></div>
+                  <div class="swiper-slide" data-month="June"><img src="./assets/images/Artboard 4.png" alt=""></div>
+                  <div class="swiper-slide" data-month="September"><img src="./assets/images/Untitled-4.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- Ay seçimi -->
+              </div>
+              <div class="month-slider-filter">
+                <button class="month-button" data-month="January">Mənzil planı</button>
+                <button class="month-button" data-month="June">Mərtəbə planı</button>
+                <button class="month-button" data-month="September">Ümumi plan</button>
+                <!-- Diğer aylar için gerekli düğmeleri buraya ekleyebilirsiniz -->
+              </div>
+        </div>
+
+        <div class="detail-right-side">
+            <div class="detail-right-innner">
+                <h3><span> 1 otaqlı </span> <span>51.27 m² </span> </h3>
+                <ul class=" detail-text">
+                    <li> <span>Zal</span> <span>17.82 m²</span></li>
+                    <li> <span>Mətbəxt</span> <span>11.5 m²</span></li>
+                    <li> <span>Holl</span> <span>7.78 m²</span></li>
+                    <li> <span>SQ</span> <span>5.01 m²</span></li>
+                    <li> <span>Eyvan</span> <span>1.54 m²</span></li> 
+                </ul>
+                <ul class="detail-text-down">
+                <li><span>Ümumi Sahə</span> <span>51.75 m²</span></li>
+                <li><span>İç Sahə</span> <span>43.79 m²</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- include header -->
+<script src="./assets/js/header.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- inner card slider control -->
+
+<script>// slider for click get image
+  
+    var swiper = new Swiper(".mySwiperslider", {
+      slidesPerView: 1, // Display one slide at a time
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    
+    // Ay düğmelerini seçme
+    var monthButtons = document.querySelectorAll(".month-button");
+    
+    // Ay düğmelerine tıklama olayını ekleme
+    monthButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        // Seçili düğme rengini sıfırlama
+        monthButtons.forEach(function (btn) {
+          btn.classList.remove("selected");
+        });
+    
+        // Seçilen düğmeye mavi rengi ekleme
+        this.classList.add("selected");
+    
+        var selectedMonth = this.getAttribute("data-month");
+    
+        // Slaytları filtreleme
+        swiper.slides.forEach(function (slide) {
+          var slideMonth = slide.getAttribute("data-month");
+    
+          if (slideMonth === selectedMonth || selectedMonth === "All") {
+            slide.style.display = "flex"; // Slaytı görünür yap
+          } else {
+            slide.style.display = "none"; // Slaytı gizle
+          }
+        });
+    
+        // Swiper yeniden başlatma
+        swiper.update();
+      });
+    });
+    
+    // Set the first button as selected by default
+    monthButtons[0].classList.add("selected");</script>
+</body>
+
+</html>

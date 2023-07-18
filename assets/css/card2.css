@@ -1,0 +1,105 @@
+.head-section .head-container .head-right .project-logo{
+    background-color: #57585a;
+}
+.adv-container .tab.active{
+    background: linear-gradient(90deg,#00963f,#dedc00 99.66%);
+}
+.container-sale{
+width: 100%;
+}
+.container-sale .inner-sale{
+    max-width: 1250px;
+    margin: auto;
+    height: 611px;
+    display: flex;
+    align-items: start;
+    position: relative;
+}
+.container-sale .inner-sale .text-head{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+}
+.container-sale .inner-sale .text-head .text-head-tags span{
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.container-sale .inner-sale .text-head .text-head-tags span:nth-child(1){
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #f39100;
+    color: white;
+}
+.container-sale .inner-sale .text-head .text-head-tags span:nth-child(2){
+    padding: 5px;
+    border-radius: 15px;
+    color: #f39100;
+    background-color: white;
+}
+.container-sale .inner-sale img{
+    width: 50%;
+    height: 100%;
+}
+.container-sale .inner-sale :hover{
+    transform: scale(1.02);
+}
+.card-right-side .description a{
+    background: linear-gradient(90deg,#00963f,#dedc00 99.66%);
+   font-size: 16px;
+}
+.card-right-side .description{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* reality img */
+.reality-img{
+    width: 100%;
+}
+.reality-img .reality-img-container{
+    max-width: 1250px;
+margin: auto  auto auto 30px;
+height: max-content;
+position: relative;
+}
+.reality-img .reality-img-container p{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    font-size: 2rem;
+}
+.reality-img .reality-img-container button{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 2rem;
+    width: 200px;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    justify-content: center;
+}
+.reality-img .reality-img-container button span{
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.reality-img .reality-img-container img{
+    width: 1250px;
+    height: 600px;
+}
+.other-project{
+    margin-top: 100px;
+}
+
+.other-projects .tags .v-tag{
+    background-color: #f39100;
+}
