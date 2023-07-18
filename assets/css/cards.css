@@ -181,7 +181,7 @@ color: rgba(42,91,108,.8);
 
 .first-slider .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 105%;
   height: 703px;
   object-fit: cover;
 }
@@ -643,7 +643,7 @@ margin-bottom: 70px;
   font-size: 2rem;
 }
 .general-plan .gen-plan-img{
-  background-image: url();
+  background-image: url('../images/1-13\ \(1\).png');
   height: 722px;
   background-size: cover;
   position: relative;
