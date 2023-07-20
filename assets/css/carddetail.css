@@ -80,6 +80,10 @@ header nav ul li a {
 }
 .filter-room-general .filter-tab{
     flex-direction: column;
+    max-width: 1250px;
+    margin: auto;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .nav-tabs{
     border: none;
@@ -114,18 +118,19 @@ header nav ul li a {
 
 .container-filter-rooms {
     height: 800px;
-    max-width: 1250px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 100px;
     border-radius: 30px;
-
+padding-left: 0px;
+padding-right: 0px;
 }
 
 .container-filter-rooms .fil-cont {
-    width: 40%;
+    width: 38%;
     height: 108% !important;
     height: 700px;
     overflow-y: scroll;
@@ -179,15 +184,87 @@ header nav ul li a {
 }
 
 .container .container-filter-rooms .filters button:hover {
-    padding: 20px;
+    
     border-radius: 10%;
     height: 50px;
     border: none;
-    background-color: white;
     font-weight: 500;
-    background-color: #f4f6fb;
 }
+.container .container-filter-rooms .filters button:focus{
+    outline: none;
+}
+::-webkit-scrollbar-track {
+    width: 10px;
 
+}
+.container-filter-rooms .obyekt-filter .left{
+     width: 37%;
+     height: 702px;
+     display: flex;
+     flex-wrap: wrap;
+     overflow-y: scroll;
+     gap: 10px;
+}
+.container-filter-rooms .obyekt-filter .right{
+    padding: 40px;
+   
+}
+.container-filter-rooms .obyekt-filter{
+    margin: 0px;
+    padding: 0px;
+}
+.container-filter-rooms .obyekt-filter .right .card-content{
+height: 100%;
+
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-filter-rooms .obyekt-filter .right .card-content .obj-down{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-filter-rooms .obyekt-filter .right .card-content .obj-down a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #2a5b6c;
+}
+.container-filter-rooms .obyekt-filter .right img{
+    margin-top: 30px;
+   margin-bottom: 70px;
+    width: 60%;
+    height: 430px;
+}
+.container-filter-rooms .obyekt-filter .left img{
+    width: 95%;
+    height: 75%;
+}
+.container-filter-rooms .obyekt-filter .right{
+    margin-left: 20px;
+     width: 60%;
+     height: 702px;
+     border-radius: 35px;
+     background-color: white;
+}
+.container-filter-rooms .obyekt-filter .card{
+    width: 189px;
+    height: 190px;
+   
+}
+.card-content {
+    display: none;
+  }
+  
+  .card-content.active {
+    display: block;
+  }
+/* slider */
 .slider-projects .swiper-slide {
     position: relative;
     width: 350px !important;
@@ -195,25 +272,17 @@ header nav ul li a {
 
 .slider-projects .swiper-slide .date_9rlql {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     color: white;
+    align-items: center;
 }
 
-.slider-projects .swiper-slide .month_0hAxJ {
-    text-transform: uppercase;
-    font-family: "History Pro", sans-serif;
-    font-weight: 400;
-}
 
-.slider-projects .swiper-slide .year_0iqZr {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "History Pro", sans-serif;
-    font-weight: 400;
-}
+
+
 
 .container-filter-rooms .filters .filter-btn {
     border-radius: 0px;
@@ -305,7 +374,7 @@ padding-top: 30px;
 }
 
 .container-filter-rooms .card-right-side {
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: center;
     height: 705px;

@@ -247,9 +247,7 @@ width: 100%;
       header .navbar-expand-lg .navbar-collapse .header-right  .header-num a{
         color: black;
       }
-      .about-down{
-        height: max-content;
-    }
+      
     header .header-right li:nth-child(3){
         display: none;
     }
@@ -502,6 +500,9 @@ header .swiper-slide .slider-bottom .slider-bottom-right{
      .news .hidden-all-news a{
         color: black;
      }
+     .about-down{
+        flex-direction: column;
+     }
      .news-container .swiper-button-next {
 right: -35px;
 transform: none;
@@ -654,6 +655,7 @@ transform: none;
     }
     .about-down{
         flex-direction: column;
+        height: max-content;
     }
     .about-down-left {
     width:100%;
@@ -710,6 +712,7 @@ transform: none;
     width: 100% !important;
     }
     .adv-container .tabs {
+        padding-bottom: 10px;
 width: 100%;
 display: flex;
 overflow: scroll;
@@ -734,6 +737,9 @@ overflow: scroll;
     }
     .slider-projects .slider-project-container{
         flex-direction: row;
+    }
+    .map-container .map-card{
+        width: 80%;
     }
 }
 

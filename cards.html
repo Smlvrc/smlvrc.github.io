@@ -25,6 +25,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&family=Libre+Baskerville&family=Montserrat:wght@200;300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 
  <link rel="stylesheet" href="./assets/css/style.css">
  <!--responsive-->
@@ -76,7 +79,9 @@
        
          </ul>
          <ul class="header-right">
-           <li><div id="icon" class="icon"> <i class="fa-solid fa-arrow-down"></i></div>
+           <li>
+            Ru
+            <div id="icon" class="icon"> <i class="fa-solid fa-arrow-down"></i></div>
              <div id="options" class="options">
                <a data-value="tr-TR">Tr</a>
                <a data-value="en-US">Eng</a>
@@ -93,46 +98,7 @@
      <!-- Background image -->
   <!-- Swiper -->
  
-  <div class="swiper mySwiper">
-   <div class="swiper-wrapper">
-     <div class="swiper-slide">
-       <img src="./assets/images/header1.webp" alt="">
-       <div class="slider-bottom">
-         <div class="slider-bottom-left"> 
-           <h3>Glorax</h3>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
-         </div>
-         <div class="slider-bottom-right">
-           <button> Выбрать апартаменты </button>
-         </div>
-       </div>
-     </div>
-     <div class="swiper-slide">
-       <img src="./assets/images/header2.webp" alt="">
-       <div class="slider-bottom">
-         <div class="slider-bottom-left"> 
-           <h3>Glorax</h3>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
-         </div>
-         <div class="slider-bottom-right">
-           <button> Выбрать апартаменты </button>
-         </div>
-       </div>
-     </div>
-     <div class="swiper-slide">
-       <img src="./assets/images/header1.webp" alt="">
-       <div class="slider-bottom">
-         <div class="slider-bottom-left"> 
-           <h3>Glorax</h3>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
-         </div>
-         <div class="slider-bottom-right" style="z-index: 3;">
-           <button> Выбрать апартаменты </button>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+  <!--  -->
    </header>
  
   <div class="head-section">
@@ -183,9 +149,9 @@
       <h2 class="slider-heading">Bakının ən görkəmli layihəsi</h2>
 
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./assets/images/3 (2).png" alt=""></div>
-        <div class="swiper-slide"> <img src="./assets/images/5-1 (1).png" alt=""> </div>
-        <div class="swiper-slide"> <img src="./assets/images/5-3.png" alt=""> </div>
+        <div class="swiper-slide"><img src="./assets/images/FOTO5.png" alt=""></div>
+        <div class="swiper-slide"> <img src="./assets/images/FOTO3.png" alt=""> </div>
+        <div class="swiper-slide"> <img src="./assets/images/FOTO6.png" alt=""> </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -885,276 +851,133 @@
           </div>
         </div>
         <!-- Option 2 Content -->
+        
+
         <div class="tab-pane fade" id="option2" role="tabpanel" aria-labelledby="option2-tab">
           <div> 
             <div class="container container-filter-rooms">
-            <div class="filters  fil-cont">
-                <div class="filtre-buttons">
-                    <button data-filter="sıfır"  onclick="toggleFilter('sıfır')"><span> holl </span></button>
-                    <button data-filter="birOda"  onclick="toggleFilter('birOda')"><span>  1</span></button>
-                    <button data-filter="ikiOda"  onclick="toggleFilter('ikiOda')"><span>  2</span></button>
-                    <button data-filter="ucOda" onclick="toggleFilter('ucOda')"><span>  3</span></button>
-                    <button data-filter="dortOda" onclick="toggleFilter('dortOda')"><span>  4+</span></button>
+              <div class="container  obyekt-filter">
+                <div class="left">
+                  <div class="card" onclick="showCard(1)">
+                  <p>Obyekt 1</p>
+                  <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(2)">
+                    <p>Obyekt 2</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(3)">
+                    <p>Obyekt 3</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(4)">
+                    <p>Obyekt 4</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(5)">
+                    <p>Obyekt 5</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(6)">
+                    <p>Obyekt 6</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(7)">
+                    <p>Obyekt 7</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <div class="card" onclick="showCard(8)">
+                    <p>Obyekt 8</p>
+                    <img src="./assets/images/1room.PNG" alt="">
+                  </div>
+                  <!-- Burada daha fazla kart ekleyebilirsiniz -->
                 </div>
-                <!-- <button class="filtre-btn" onclick="filtrele()">Filtrele</button> -->
-                <p id="sayiGostermeAlani"></p>
-        
-                <div class="cardlar card-left-side">
-                    <div class="card" data-odasayisi="2" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            51.27 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                          <div class="plan-img">
-                        <img src="./assets/images/2room.PNG" alt="">
-                      </div>
-                      </div>
-                      <div class="left-side-content">
-                        <p>от 11 820 300 ₽</p>
-                      </div>
-                       <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)">detail</a></p>
-        
+                <div class="right" id="displayedCard">
+                  <div class="card-content" id="card1-content" style="display: none;">
+
+                    <p>Obyekt 1</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
-                    <div class="card" data-odasayisi="2" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            79.37 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                        <img src="./assets/images/2room.PNG" alt="">
-                      </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                          
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)">detail</a>   </p>
-                        </p>
-                           <!-- <div class="hidden-detail">
-                            hidden detail
-                        </div> -->
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
                     </div>
-                    
-                    <div class="card" data-odasayisi="1" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            104.7 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                        <img src="./assets/images/1room.PNG" alt="">
-                      </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                        </p>
-                    </div>
-                    <div class="card" data-odasayisi="1" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            60.49 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                        <img src="./assets/images/1room2.PNG" alt="">
-                      </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                        </p>
-                    </div>
-                    <div class="card" data-odasayisi="3" onclick="gosterKart(this)">
-                          <div class="left-side-img">
-                            <div class="room-area">
-                              <p class="p-in">
-                                67.49 m²
-                             <span> mərtəbə </span></p> 
-                              <p class="p-in">1.1.1 <span>blok</span></p>
-                              <p class="p-in">96.1m <span>sahəsi</span></p>
-                            
-                            </div>
-                        <img src="./assets/images/hall.PNG" alt="">
-                      </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span>detail </span></a>   </p>
-                        </p>
-                    </div>
-                    <div class="card" data-odasayisi="3" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            200.49 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
+                  
                   </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span>detail </span></a>   </p>
-                        </p>
+                  <div class="card-content" id="card2-content" style="display: none;">
+                    <p>Obyekt 2</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
-                    <div class="card" data-odasayisi="4" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            150.49 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
                   </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail</span></a>   </p>
-                        </p>
+                  <div class="card-content" id="card3-content" style="display: none;">
+                    <p>Obyekt 3</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
-                    <div class="card" data-odasayisi="4" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            190.4 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
                   </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                        </p>
+                  <div class="card-content" id="card4-content" style="display: none;">
+                    <p>Obyekt 4</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
-                    <div class="card" data-odasayisi="0" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            30.49 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
                   </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                        </p>
+                  <div class="card-content" id="card5-content" style="display: none;">
+                    <p>Obyekt 5</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
-                    <div class="card" data-odasayisi="0" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            20.4 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
                   </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail</span></a>   </p>
-                        </p>
+                  <div class="card-content" id="card6-content" style="display: none;">
+                    <p>Obyekt 6</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
-                    <div class="card" data-odasayisi="0"  onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            37.49 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
                   </div>
-                        <div class="left-side-content">
-                          <p>от 11 820 300 ₽</p>
-                        </div>
-                        <p class="description">
-                            <span>Квартал Строгино</span>
-                            <span>58,8 м²</span>
-                            <span>от 14 646 798 ₽</span>
-                            <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                        </p>
+                  <div class="card-content" id="card7-content" style="display: none;">
+                    <p>Obyekt 7</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
                     </div>
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
+                  </div>
+                  <div class="card-content" id="card8-content" style="display: none;">
+                    <p>Obyekt 8</p>
+                    <div>
+                      <img src="./assets/images/1room.PNG" alt="">
+                    </div>
+                    <div class="obj-down">
+                      <div class="obj-down-left">leftt</div>
+                      <div class="obj-down-right"><a href="./object-card.html">Detail</a> </div>
+                    </div>
+                  </div>
+                  <!-- Burada daha fazla kart içeriği ekleyebilirsiniz -->
                 </div>
-            </div>
-        
-            <div class="card-right-side"  id="rightSide">
-               
-                <div id="selectedCardDetails" class="card-description"></div>
-            </div>
+              </div>
             </div>
           
           </div>
@@ -1163,264 +986,7 @@
       </div>
     </div>
 
-    <!-- <div class="container container-filter-rooms">
-        <div class="filter2 fil-cont">
-           <p id="sayiGostermeAlani2"></p>
-            <div class="cardlar card-left-side2"  id="leftSide2">
-                <div class="card" data-odasayisi="2" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        51.27 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                      <div class="plan-img">
-                    <img src="./assets/images/2room.PNG" alt="">
-                  </div>
-                  </div>
-                  <div class="left-side-content">
-                    <p>от 11 820 300 ₽</p>
-                  </div>
-                   <p class="description">
-                    <span>Квартал Строгино</span>
-                    <span>58,8 м²</span>
-                    <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)">detail</a></p>
     
-                </div>
-                <div class="card" data-odasayisi="2" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        79.37 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                    <img src="./assets/images/2room.PNG" alt="">
-                  </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                      
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)">detail</a>   </p>
-                    </p>
-                      
-                </div>
-                
-                <div class="card" data-odasayisi="1" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        104.7 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                    <img src="./assets/images/1room.PNG" alt="">
-                  </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="1" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        60.49 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                    <img src="./assets/images/1room2.PNG" alt="">
-                  </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="3" onclick="gosterKart(this)">
-                      <div class="left-side-img">
-                        <div class="room-area">
-                          <p class="p-in">
-                            67.49 m²
-                         <span> mərtəbə </span></p> 
-                          <p class="p-in">1.1.1 <span>blok</span></p>
-                          <p class="p-in">96.1m <span>sahəsi</span></p>
-                        
-                        </div>
-                    <img src="./assets/images/hall.PNG" alt="">
-                  </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span>detail </span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="3" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        200.49 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                <img src="./assets/images/hall.PNG" alt="">
-              </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span>detail </span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="4" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        150.49 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                <img src="./assets/images/hall.PNG" alt="">
-              </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail</span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="4" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        190.4 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                <img src="./assets/images/hall.PNG" alt="">
-              </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="0" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        30.49 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                <img src="./assets/images/hall.PNG" alt="">
-              </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="0" onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        20.4 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                <img src="./assets/images/hall.PNG" alt="">
-              </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail</span></a>   </p>
-                    </p>
-                </div>
-                <div class="card" data-odasayisi="0"  onclick="gosterKart(this)">
-                  <div class="left-side-img">
-                    <div class="room-area">
-                      <p class="p-in">
-                        37.49 m²
-                     <span> mərtəbə </span></p> 
-                      <p class="p-in">1.1.1 <span>blok</span></p>
-                      <p class="p-in">96.1m <span>sahəsi</span></p>
-                    
-                    </div>
-                <img src="./assets/images/hall.PNG" alt="">
-              </div>
-                    <div class="left-side-content">
-                      <p>от 11 820 300 ₽</p>
-                    </div>
-                    <p class="description">
-                        <span>Квартал Строгино</span>
-                        <span>58,8 м²</span>
-                        <span>от 14 646 798 ₽</span>
-                        <a class="des" href="./carddetail2.html" onclick="showHiddenDetail(this)"> <span> detail </span></a>   </p>
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class=" right2"  id="rightSide2">
-           
-            <div id="selectedCardDetails2" class="card-description"></div>
-        </div>
-        </div> -->
     </div>
 
 <!-- calculator section -->
@@ -1602,6 +1168,42 @@
 </div>
 </div>
 
+ <!-- map section -->
+ <div id="office" class="map-container">
+  <div class="map-card">
+    <img src="./assets/images/a331da92353bb744a9850d13d7653de8.webp" alt="">
+    <div class="img-cont1">
+      <h3>West Town yaşayış
+        kompleksinin satış ofisi</h3>
+      <p>Dərnəgül, Bakı</p>
+    </div>
+    <div class="img-cont2">
+      <ul>
+        <li>
+          <p>Əlaqə nömrəsi</p>
+          <p>051-277-70-51</p>
+        </li>
+        <li>
+          <p>İş saatları</p>
+          <div class="tel-text">
+            <p>B.e – C 10:00 – 18:00 </p>
+            <!-- <p>Вс с 11:00 до 17:00</p> -->
+          </div>
+        </li>
+        <li>
+          <p>Email:</p>
+          <p> info@westtown.az</p>
+        </li>
+      </ul>
+    </div>
+    <button> Satış ofisində qeydiyyatdan keçin </button>
+  </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49098786.18089252!2d-9.796952500000005!3d41.314256549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16eee04700001%3A0xd025a21820b61b3b!2sFortis%20Development!5e0!3m2!1str!2saz!4v1687469070366!5m2!1str!2saz"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
   <!-- other projects -->
   <div class="other-projects-container">
     <div class="other-projects">
@@ -1683,41 +1285,7 @@
       </div>
     </div>
   
- <!-- map section -->
- <div id="office" class="map-container">
-  <div class="map-card">
-    <img src="./assets/images/a331da92353bb744a9850d13d7653de8.webp" alt="">
-    <div class="img-cont1">
-      <h3>West Town yaşayış
-        kompleksinin satış ofisi</h3>
-      <p>Dərnəgül, Bakı</p>
-    </div>
-    <div class="img-cont2">
-      <ul>
-        <li>
-          <p>Əlaqə nömrəsi</p>
-          <p>051-277-70-51</p>
-        </li>
-        <li>
-          <p>İş saatları</p>
-          <div class="tel-text">
-            <p>B.e – C 10:00 – 18:00 </p>
-            <!-- <p>Вс с 11:00 до 17:00</p> -->
-          </div>
-        </li>
-        <li>
-          <p>Email:</p>
-          <p> info@westtown.az</p>
-        </li>
-      </ul>
-    </div>
-    <button> Satış ofisində qeydiyyatdan keçin </button>
-  </div>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49098786.18089252!2d-9.796952500000005!3d41.314256549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16eee04700001%3A0xd025a21820b61b3b!2sFortis%20Development!5e0!3m2!1str!2saz!4v1687469070366!5m2!1str!2saz"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+
   
 
 <!-- form section -->
@@ -1835,10 +1403,38 @@
   <!-- first slider js -->
   <script src="./assets/js/inner-cardslider.js"></script>
   <script src="./assets/js/sliderandtab.js"></script>
+<!-- obyektleri filter etmek ucun  -->
+<script>// Sayfa yüklendiğinde ilk kartın içeriğini göster
+  document.addEventListener("DOMContentLoaded", function() {
+    showCard(1);
+  });
+  
+  function showCard(cardNumber) {
+    const cards = document.getElementsByClassName("card");
+    const displayedCard = document.getElementById("displayedCard");
+  
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].classList.remove("active");
+    }
+  
+    cards[cardNumber - 1].classList.add("active");
+  
+    const cardContent = document.getElementById(`card${cardNumber}-content`);
+    const cardContents = document.getElementsByClassName("card-content");
+    
+    for (let i = 0; i < cardContents.length; i++) {
+      cardContents[i].style.display = "none";
+    }
+    
+    cardContent.style.display = "block";
+  }
 
-  <!-- card js include footer -->
+</script>
+
+<!-- card js include footer -->
   <script src="./assets/js/card.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 
 
