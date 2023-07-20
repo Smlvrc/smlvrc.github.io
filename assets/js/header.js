@@ -17,61 +17,63 @@ navbarToggler.addEventListener("click", function() {
 
 
 //  header section image -->
-var swiper = new Swiper(".mySwiper7", {
-  rewind: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  on: {
-    slideChange: function () {
-      var activeSlide = this.slides[this.activeIndex];
-      var slideText = activeSlide.innerText;
-      var slideContent = document.querySelector(".swiper-slide-active h1");
-      slideContent.innerHTML = slideText;
+document.addEventListener('DOMContentLoaded', function () {
+  var mySwiper = new Swiper('.mySwiper7', {
+    // Slayt geçişinin nasıl olacağına dair ayarlar
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.custom-next-button',
+      prevEl: '.custom-prev-button',
     },
-  },
+  });
 });
 
 // header section end
 
 
-  // change color when page scrolling
-  window.addEventListener('scroll', function () {
-    const nav = document.querySelector('nav');
-    const navLinks = document.querySelectorAll('nav .navbar-nav .nav-link');
-    const icons = document.querySelectorAll('.icon i');
-    const options = document.getElementById('options');
-    const phoneNumber = document.querySelector('.header-num a');
-  
-    const scrolledBgColor = 'white'; // Scroll yaparken navbarın arka plan rengi
-    const defaultBgColor = ''; // Scroll yapmadığınızda navbarın varsayılan arka plan rengi
-    const scrolledColor = 'black'; // Scroll yaparken ikonların ve etiketlerin rengi
-    const defaultColor = ''; // Scroll yapmadığınızda ikonların ve etiketlerin varsayılan rengi
-  
-    if (window.scrollY > 0) {
-      nav.style.backgroundColor = scrolledBgColor;
-      navLinks.forEach(function (link) {
-        link.style.color = scrolledColor;
-      });
-      icons.forEach(function (icon) {
-        icon.style.color = scrolledColor;
-      });
-      options.style.backgroundColor = scrolledBgColor;
-      phoneNumber.style.color = scrolledColor;
-    } else {
-      nav.style.backgroundColor = defaultBgColor;
-      navLinks.forEach(function (link) {
-        link.style.color = defaultColor;
-      });
-      icons.forEach(function (icon) {
-        icon.style.color = defaultColor;
-      });
-      options.style.backgroundColor = defaultBgColor;
-      phoneNumber.style.color = defaultColor;
-    }
-  });
-  
+// change color when page scrolling
+window.addEventListener('scroll', function () {
+  const nav = document.querySelector('nav');
+  const navLinks = document.querySelectorAll('nav .navbar-nav .nav-link');
+  const icons = document.querySelectorAll('.icon i');
+  const options = document.getElementById('options');
+  const phoneNumber = document.querySelector('.navbar a');
+  const ruSpan = document.querySelector('.icon span');
+  const phoneNumberLink = document.querySelector('.header-num a');
+
+  const scrolledBgColor = 'white'; // Scroll yaparken navbarın arka plan rengi
+  const defaultBgColor = ''; // Scroll yapmadığınızda navbarın varsayılan arka plan rengi
+  const scrolledColor = 'black'; // Scroll yaparken ikonların ve etiketlerin rengi
+  const defaultColor = ''; // Scroll yapmadığınızda ikonların ve etiketlerin varsayılan rengi
+
+  if (window.scrollY > 0) {
+    nav.style.backgroundColor = scrolledBgColor;
+    navLinks.forEach(function (link) {
+      link.style.color = scrolledColor;
+    });
+    icons.forEach(function (icon) {
+      icon.style.color = scrolledColor;
+    });
+
+    options.style.backgroundColor = scrolledBgColor;
+    phoneNumber.style.color = scrolledColor;
+    ruSpan.style.color = scrolledColor;
+    phoneNumberLink.style.color = scrolledColor;
+  } else {
+    nav.style.backgroundColor = defaultBgColor;
+    navLinks.forEach(function (link) {
+      link.style.color = defaultColor;
+    });
+    icons.forEach(function (icon) {
+      icon.style.color = defaultColor;
+    });
+    options.style.backgroundColor = defaultBgColor;
+    phoneNumber.style.color = defaultColor;
+    ruSpan.style.color = defaultColor;
+    phoneNumberLink.style.color = defaultColor;
+  }
+});
   
 
   

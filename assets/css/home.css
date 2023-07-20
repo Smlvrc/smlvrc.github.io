@@ -11,7 +11,7 @@ text-decoration: none;
 /* header section */
 header{
   background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-height: 700px;
+height: 665px;
 background-repeat: no-repeat;
 background-size: contain;
 padding-top: 0px !important;
@@ -96,7 +96,8 @@ header  nav ul li{
   margin: 0px 6px 0px 9px;
 }
 header  nav .nav-item:hover{
-  border-bottom: 2px solid rgb(50, 0, 240);
+  border-bottom-color:  rgb(50, 0, 240) !important;
+  color: rgb(50, 0, 240);
 }
 header  nav .nav-item a{
   padding: 0px !important;
@@ -122,17 +123,41 @@ header .header-right i{
   color: black;
   background-color: white;
 }
+header .header-right i:hover{
+  color: #491df2;
+}
 header ul li{
   width: max-content;
 }
 header nav:hover{
   background-color: white;
 }
+
 header nav:hover a{
   color:#3200f0;
 }
-header nav:hover .fa-arrow-down{
+header nav:hover .header-num a{
+  color:black;
+}
+header nav .header-num:hover a{
   color:#3200f0;
+}
+header nav :hover .icon span{
+  color:black;
+}
+
+header nav .icon span:hover{
+  color: #491df2;
+}
+header nav:hover .fa-arrow-down{
+  color:black;
+}
+header nav  .icon span :hover .fa-arrow-down{
+  color: #3200f0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+  color: #3200f0;
 }
 header .swiper-slide {
   text-align: center;
@@ -144,7 +169,7 @@ header .swiper-slide {
   position: relative;
 
 }
-.swiper-slide {
+ .swiper-slide {
   font-size: 18px;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -158,30 +183,58 @@ header .swiper-slide {
   display: flex;
   justify-content: space-between;
 }
-header .swiper .swiper-button-prev{
-  padding: 30px;
-  font-size: 12px;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
- position: absolute;
- top: 500px;
- left: 1203px;
- transform: rotate(180deg);
-}
+/* buttons */
 
-header .swiper .swiper-button-next{
-  padding: 30px;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
+.mySwiper7{
+  position: relative;
+  }
+  header .navbar-toggler{
+    background-color: #3200f0;
+    border-radius: 50%;
+    width: 40px;
+    color: white;
+    height: 40px;
+  }
+  header .responsive-icons{
+    display: none;
+  }
+  header .buttons-swiper{
   position: absolute;
-  top: 500px;
-  right: 100px;
-  transform: rotate(180deg);
-
-}
-
+ bottom: 80px;
+  right: 7%;
+  z-index: 5;
+  }
+  .buttons-swiper .custom-prev-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .buttons-swiper .custom-next-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-left: 10px;
+    transition: 0.5s;
+  }
+  .buttons-swiper .custom-prev-button:hover{
+    transform: scale(1.1);
+  }
+  .buttons-swiper .custom-next-button:hover{
+transform: scale(1.1);
+  }
+  .buttons-swiper .custom-prev-button:hover i{
+    color: #491df2;
+  }
+  .buttons-swiper .custom-next-button:hover i{
+    color: #491df2;
+  }
 header .swiper-slide img {
   display: block;
   width: 100%;
@@ -192,7 +245,7 @@ header .swiper-slide img {
 }
 header .swiper-slide .slider-bottom{
   position:absolute;
-  bottom: 160px;
+  bottom: 80px;
  z-index: 5 !important;
  color: white;
  display: flex;
@@ -250,13 +303,13 @@ header .container-fluid {
   padding:20px 30px 20px 30px;
 }
 header .container-fluid .header-logo img{
-  width: 110px;
+  width: 138px;
   height: 100%;
- 
+ background-color: red;
   border-radius: 5px;
 }
 header .navbar {
-  height: 90px;
+  height: 100px;
   padding: 0px;
 }
 
@@ -266,10 +319,16 @@ header .navbar-expand-lg .navbar-collapse .me-auto{
         display: flex;
         justify-content: space-between;
         margin-left: 20px;
-      
+      height: 100px;
       }
       header .icon{
         color: black;
+      }
+      header .navbar-expand-lg .navbar-collapse .nav-item{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 4px ;
       }
  /* first section */
  .img-container{
@@ -466,11 +525,12 @@ color: white;
  
 }
 .container-inside-main{
-  max-width: 1250px;
+  padding: 30px;
+  max-width: 1400px;
   margin: auto;
 }
 .container-inside-main .mt-50{
-  font-family: var(--head-text);
+  font-family: "Prosto One",sans-serif;
   font-size: 3rem;
   margin-bottom: 60px;
   color: #161921;
@@ -478,14 +538,167 @@ color: white;
 .container-inside-main .cards-common{
   justify-content: space-between;
 }
+
+/* calculator section */
+.calculator-container{
+  width: 100%;
+}
+.calculator-container .calculator{
+  max-width: 1400px;
+margin: 40px auto 40px;
+}
+.calculator .for-select-area{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+}
+.calculator .row .for-select select{
+  height: 41px;
+  color: #656565;
+  width: 100%;
+  border-radius: 6px;
+}
+main .left-side form .for-select-area
+
+{border-top: 1px solid #e5e5e5;
+}
+
+.calculator .for-select-border{
+justify-content: space-between;
+  display: flex;
+  height: 41px;
+  border: 1px solid #656565;
+
+  border-radius: 5px;
+  height: 48px;
+  width: 100%;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.calculator .for-select-border  label{
+  color: #656565;
+  width: 70%;
+  margin-bottom: 0;
+}
+.for-select-area .down-select-area .select-area .for-select-border .first-p{
+  width: 70%;
+  color: #656565;
+  padding: 0px;
+  margin: 0px;
+}
+.for-select-area .down-select-area .select-area .for-select-border #homePrice{
+  width: 70%;
+  color: #656565;
+  padding: 0px;
+  margin: 0px;
+}
+.calculator .for-select-border select{
+  width: 30%;
+  border: 1px solid #656565;
+  height: 30px;
+  color: #656565;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+.for-select-area .down-select-area .select-area .for-select-border #homePrice{
+  text-align: end;
+}
+.calculator .left-side form .for-select-area .for-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.calculator .left-side form .for-select-area .for-button button{
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 11px 46px;
+  background-color:#E2E5E8;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.calculator .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.calculator .justify-content-around{
+  flex-wrap: wrap-reverse;
+}
+.for-select-area .down-select-area .select-area{
+  margin-bottom: 25px;
+}
+.calculator .right-side{
+  background:#2D6478;
+  border-radius: 10px;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calculator .right-side .price-side{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.calculator .right-side .price-side .cost-area{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  font-size: 96px;
+}
+.calculator .right-side .price-side .border-area{
+  border-top: 2px solid #969696;
+  width: 80%;
+}
+.calculator .right-side .price-side .price-place .initial-payment{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.calculator .right-side .price-side .price-place .total-payment{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.calculator .right-side .price-side .price-place{
+  display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 27px;
+}
+.calculator .right-side .price-side .price-place  span{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
 /* form css */
 .form-container-main{
   margin: 0px;
  width: 100%;
-padding-top: 70px;
+padding:30px;
+padding-bottom: 0px;
 }
 .form-container-main .form-inside{
-  max-width: 1250px;
+  max-width: 1400px;
   margin: auto;
 }
  .form-inside{
@@ -494,7 +707,7 @@ padding-top: 70px;
 }
 
 .form-container {
-  width: 44%;
+  width: 42%;
   margin-right: 50px;
 }
 .form-container h3{
@@ -506,7 +719,7 @@ padding-top: 70px;
 }
 
 .shape-container {
-  width: 60%;
+  width: 64%;
 
   /* Şekil stilini burada özelleştirin */
 }
@@ -514,7 +727,8 @@ padding-top: 70px;
   width: 100%;
 }
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 label {
@@ -526,7 +740,7 @@ label {
 }
 input[type="text"] {
   width: 100%;
-  padding: 10px;
+  padding: 18px;
   border-radius: 8px;
 font-family: var(--head-text);
 }
@@ -619,7 +833,7 @@ cursor: pointer;
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section{
   display: flex;
   align-items: start;
-  padding-top: 50px;
+
  
 }
 li{
@@ -670,7 +884,9 @@ li a.active{
 .news{
   width: 100%;
   background-color: #f4f7f9;
-  padding: 60px 0px 60px 55px;
+  padding: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .news-container{
  width: 100%;
@@ -680,11 +896,21 @@ li a.active{
  width: 50%;
  display: flex;
  justify-content: space-between;
+align-items: center;
  margin-bottom: 40px;
+ font-size: 22px;
 }
+
 .news-container .news-head h3{
-  font-weight: bold;
-  font-size: 30px;
+ 
+  font-family: var(--head-text);
+  font-size: 3rem;
+}
+.news-container .news-head h3 a{
+  font-size: 1px;
+}
+.news .hidden-all-news{
+  display: none;
 }
 .news-container .mySwipernews a{
   display: inline-block;
@@ -764,6 +990,7 @@ opacity: 0;
   color: white;
 }
 .news-container .mySwipernews a h5{
+  font-family: var(--head-text2);
   z-index: 4;
   background-color: white;
   padding: 30px;
@@ -807,10 +1034,17 @@ opacity: 0;
   padding-right: 30px;
 }
 /* footer */
-
-footer{
-background-color: #007bff;
+.footer-inner{
   padding: 40px;
+  padding-bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: max-content;
+  width: 100%;
+  background-image:url(../images/footer_bg\ \(1\).jpg) ;
+}
+footer{
+ 
   background-size: cover;
 display: flex;
 flex-direction: column;

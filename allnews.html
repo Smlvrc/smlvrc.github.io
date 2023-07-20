@@ -5,13 +5,128 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- 
-  <link rel="stylesheet" href="./assets/css/home.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
+ <!-- font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--home css-->
+<link rel="stylesheet" href="./assets/css/home.css">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- card css -->
+<link rel="stylesheet" href="./assets/css/cards.css">
+<!--responsive-->
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<!-- filter and card detail css -->
+<link rel="stylesheet" href="./assets/css/carddetail.css">
+<!-- font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  
+   <!-- header -->
+   <header style="background-image: none; height: 0px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+     <div class="container-fluid">
+       <div class="header-logo">
+        <a href="#"> <img src="./assets/images/df.png" alt=""></a>
+
+         </a>
+         
+       </div>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-mdb-toggle="collapse"
+         data-mdb-target="#navbarExample01"
+         aria-controls="navbarExample01"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+       >
+         <i class="fas fa-bars"></i>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarExample01">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item active">
+             <a class="nav-link" aria-current="page" href="#">Ana səhifə</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Haqqımızda </a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Layihələr</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Satış həlləri</a>
+           </li>
+       
+         </ul>
+         <ul class="header-right">
+           <li><div id="icon" class="icon"> <i class="fa-solid fa-arrow-down"></i></div>
+             <div id="options" class="options">
+               <a data-value="tr-TR">Tr</a>
+               <a data-value="en-US">Eng</a>
+             </div></li>
+           <li class="header-num" ><a href="">051-277-70-51  </a></li>
+           <li><a href=""> <i class="fa-solid fa-heart"></i></a></li>
+           <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+         </ul>
+     </div>
+     </div>
+   </nav>
+   <!-- Navbar -->
+   
+     <!-- Background image -->
+  <!-- Swiper -->
+ 
+  <div class="swiper mySwiper">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <img src="./assets/images/header1.webp" alt="">
+       <div class="slider-bottom">
+         <div class="slider-bottom-left"> 
+           <h3>Glorax</h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
+         </div>
+         <div class="slider-bottom-right">
+           <button> Выбрать апартаменты </button>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <img src="./assets/images/header2.webp" alt="">
+       <div class="slider-bottom">
+         <div class="slider-bottom-left"> 
+           <h3>Glorax</h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
+         </div>
+         <div class="slider-bottom-right">
+           <button> Выбрать апартаменты </button>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <img src="./assets/images/header1.webp" alt="">
+       <div class="slider-bottom">
+         <div class="slider-bottom-left"> 
+           <h3>Glorax</h3>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
+         </div>
+         <div class="slider-bottom-right" style="z-index: 3;">
+           <button> Выбрать апартаменты </button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+   </header>
+
 <div class="general-all-news">
 <div class="container allnews">
   <h2>Пресс-центр</h2>
@@ -199,5 +314,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./assets/js/header.js"></script>
+
 </body>
 </html>

@@ -142,8 +142,9 @@
                 <!-- Ay seçimi -->
               </div>
               <div class="month-slider-filter">
-                <button class="month-button" data-month="January">Mənzil planı</button>
                 <button class="month-button" data-month="June">Mərtəbə planı</button>
+
+                <button class="month-button" data-month="January">Mənzil planı</button>
                 <button class="month-button" data-month="September">Ümumi plan</button>
                 <!-- Diğer aylar için gerekli düğmeleri buraya ekleyebilirsiniz -->
               </div>
@@ -151,7 +152,21 @@
 
         <div class="detail-right-side">
             <div class="detail-right-innner">
-                <h3><span> 1 otaqlı </span> <span>51.27 m² </span> </h3>
+              <h4><span> 1 otaqlı </span> <span>51.27 m² </span> </h4>
+
+              <div class="inner-calculator">
+                <div class="for-select-border">
+                  <label>İlkin ödəniş, faiz</label>
+                  <select name="percent" onchange="_changePercent(this)" id="percent"><option data-area="30" selected="" value="1">30%</option><option data-area="40" null="" value="2">40%</option><option data-area="50" null="" value="3">50%</option><option data-area="75" null="" value="4">75%</option><option data-area="90" null="" value="5">90%</option><option data-area="100" null="" value="6">100%</option></select>
+              </div>
+              <div class="for-select-border">
+                <label> Müddət </label>
+                <select name="month" onchange="_changeMonth(this)" id="month"><option data-area="12" selected="" value="1">12 Ay</option><option data-area="18" null="" value="2">18 Ay</option><option data-area="24" null="" value="3">24 Ay</option></select>
+            </div>
+            
+            </div>
+             
+                <div class="price"> <div class="price-inner"> <span> 50 0000 </span> <span>azn </span> </div> </div>
                 <ul class=" detail-text">
                     <li> <span>Zal</span> <span>17.82 m²</span></li>
                     <li> <span>Mətbəxt</span> <span>11.5 m²</span></li>

@@ -9,7 +9,10 @@
 
 <!--home css-->
 <link rel="stylesheet" href="./assets/css/home.css">
-
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&family=Montserrat:wght@200;300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 <!-- swiper -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
@@ -44,6 +47,11 @@
         <a href="#"> <img src="./assets/images/df.png" alt=""></a>
         
       </div>
+
+      <div class="responsive-icons">
+        <a href=""> <i class="fa-solid fa-heart"></i></a>
+        <a href=""><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-solid fa-phone"></i></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -54,6 +62,8 @@
         aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
+    </div>
+      
       <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
@@ -94,6 +104,7 @@
  <div class="swiper mySwiper7">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
+
       <img src="./assets/images/kesilmish.jpg" alt="">
       <div class="slider-bottom">
         <div class="slider-bottom-left"> 
@@ -105,8 +116,9 @@
         </div>
       </div>
     </div>
-    <div class="swiper-slide">
+    <di class="swiper-slide">
       <img src="./assets/images/2.png" alt="">
+    
       <div class="slider-bottom">
         <div class="slider-bottom-left"> 
           <h3>West Apartments</h3>
@@ -119,28 +131,15 @@
         </div>
       </div>
     </div>
-    <div class="swiper-slide">
-      <img src="./assets/images/header1.webp" alt="">
-      <div class="slider-bottom">
-        <div class="slider-bottom-left"> 
-          <h3>Glorax</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reprehenderit?</p>
-        </div>
-        <div class="slider-bottom-right" style="z-index: 3;">
-          <button> Выбрать апартаменты </button>
-        </div>
-      </div>
-    </div>
+    
     
   </div>
-   <!-- Button Container -->
-  <div class="swiper-button-container">
-    <!-- Prev Button -->
-    <div class="swiper-button-prev"></div>
-
-    <!-- Next Button -->
-    <div class="swiper-button-next"></div>
-  </div>
+   
+   <!-- Custom Navigation Buttons -->
+<div class="buttons-swiper">
+  <button class="custom-prev-button"> <i class="fa-solid fa-angle-left"></i> </button>
+<button class="custom-next-button"><i class="fa-solid fa-angle-right"></i></button>
+</div>
 </div> 
   </header>
 
@@ -337,6 +336,86 @@
   </div>
   </section>
   
+  <!-- calculator section00 -->
+<div class="calculator-container">
+<div class="calculator">
+  <div class="row justify-content-around my-5">
+    <div class="left-side col-12 col-md-6 ">
+        <h2>
+            Daxili Kredit Kalkulyatoru                    </h2>
+        <form action="#">
+            <div class="for-select-area">
+                <div class="row justify-content-evenly">
+                    <div class="col-6 for-select">
+                        <label for="room">Otaq sayı seçin</label>
+                        <select name="room" onchange="_changeRoom(this)" id="room"><option value="1" selected="">1 Otaqlı</option><option value="2" null="">2 Otaqlı</option><option value="3" null="">3 Otaqlı</option></select>
+                    </div>
+                    <div class="col-6 for-select">
+                        <label for="room">Sahə seçin</label>
+                        <select name="area" onchange="_selectArea(this)" id="area"><option data-area="51.27" selected="" value="1">51.27 m²</option><option data-area="58.46" null="" value="2">58.46 m²</option><option data-area="59.94" null="" value="3">59.94 m²</option><option data-area="60.49" null="" value="4">60.49 m²</option><option data-area="64.78" null="" value="5">64.78 m²</option></select>
+                    </div>
+                </div>
+                <div class="border-area"></div>
+                <div class="row down-select-area">
+                    
+                    <div class="col-12 col-sm-12 col-lg-6 select-area">
+                        <div class="for-select-border">
+                            <label>İlkin ödəniş, faiz</label>
+                            <select name="percent" onchange="_changePercent(this)" id="percent"><option data-area="30" selected="" value="1">30%</option><option data-area="40" null="" value="2">40%</option><option data-area="50" null="" value="3">50%</option><option data-area="75" null="" value="4">75%</option><option data-area="90" null="" value="5">90%</option><option data-area="100" null="" value="6">100%</option></select>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-lg-6 select-area">
+                        <div class="for-select-border">
+                            <label> Müddət </label>
+                            <select name="month" onchange="_changeMonth(this)" id="month"><option data-area="12" selected="" value="1">12 Ay</option><option data-area="18" null="" value="2">18 Ay</option><option data-area="24" null="" value="3">24 Ay</option></select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-12 select-area">
+                        <div class="for-select-border">
+                            <p class="first-p">Evin qiyməti</p>
+                            <p id="homePrice">93824.10</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="for-button">
+                    <button onclick="hesabla()" type="button">
+                        Hesabla
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="right-side col-12 col-md-5">
+        <div class="price-side">
+            <p class="montlhy-payment">Aylıq ödəniş</p>
+
+            <div class="cost-area">
+                <img src="../src/photos/Vector (10).png" alt="">
+                <p id="paymentByMonth" class="mx-auto">0</p>
+            </div>
+
+            <div class="border-area"></div>
+
+            <div class="price-place">
+                <div class="initial-payment">
+                    <span>İlkin ödəniş</span>
+                    <p id="initialPaymet">28,147.23</p>
+                </div>
+                <div class="total-payment">
+                    <span>Ödəniş müddəti</span>
+                    <p id="monthPeriod">12 Ay</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+
 <!-- form section -->
 <div class=" form-container-main">
   <div class="form-inside">
@@ -442,11 +521,17 @@
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
 </div>
+
+<div class="hidden-all-news">
+  <a href="./allnews.html">All news</a>
+</div>
 </div>
 </div>
 
 <!-- footer -->
 <footer>
+<div class="footer-inner">
+
   <div class="footer-top">
     <div class="logo">
       <img src="./assets/images/logo-down.PNG" alt="">
@@ -520,6 +605,11 @@
 <div class="right-2">Jugaad logo</div>
 </div>
 </div>
+
+</div>
+
+
+
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -527,7 +617,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
   document.addEventListener('scroll', function() {
-    document.body.classList.add('scroll');
+    document.body.classList.add ('scroll');
   });
 </script>
 <script src="./assets/js/slider.js"></script>
@@ -537,6 +627,7 @@
 <script src="./assets/js/header.js"></script>
 <script src="./assets/js/home.js"></script>
 <script src="./assets/js/newslider.js"></script>
+
 
 
 </body>

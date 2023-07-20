@@ -89,31 +89,31 @@ function toggleFilter(filter) {
 
 
 
-function gosterKart(kart) {
-    var detaylar = document.getElementById('selectedCardDetails');
-    detaylar.innerHTML = '';
+// function gosterKart(kart) {
+//     var detaylar = document.getElementById('selectedCardDetails');
+//     detaylar.innerHTML = '';
 
-    var kartKlon = kart.cloneNode(true);
-    kartKlon.classList.remove('selected');
-    detaylar.appendChild(kartKlon);
+//     var kartKlon = kart.cloneNode(true);
+//     kartKlon.classList.remove('selected');
+//     detaylar.appendChild(kartKlon);
 
-    var kartText = kart.getElementsByTagName('p')[0].innerText;
+//     var kartText = kart.getElementsByTagName('p')[0].innerText;
 
-    // Update the selected card on the right side
-    var selectedCard = document.querySelector('.card-right-side .card.selected');
-    if (selectedCard) {
-        selectedCard.style.display = 'none';
-        selectedCard.classList.remove('selected');
-    }
-    kart.style.display = 'block';
-    kart.classList.add('selected');
+//     // Update the selected card on the right side
+//     var selectedCard = document.querySelector('.card-right-side .card.selected');
+//     if (selectedCard) {
+//         selectedCard.style.display = 'none';
+//         selectedCard.classList.remove('selected');
+//     }
+//     kart.style.display = 'block';
+//     kart.classList.add('selected');
 
-    // Get the data-odasayisi attribute value
-    var odaSayisi = kart.getAttribute('data-odasayisi');
+//     // Get the data-odasayisi attribute value
+//     var odaSayisi = kart.getAttribute('data-odasayisi');
 
-    // Call toggleFilter() with the corresponding filter
-    toggleFilter(odaSayisi);
-}
+//     // Call toggleFilter() with the corresponding filter
+//     toggleFilter(odaSayisi);
+// }
  
 
 

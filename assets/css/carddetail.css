@@ -78,7 +78,23 @@ header nav ul li a {
     width: 100%;
     background-color: #f4f6fb;
 }
-
+.filter-room-general .filter-tab{
+    flex-direction: column;
+}
+.nav-tabs{
+    border: none;
+    margin-top: 40px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+.nav-tabs .nav-item{
+    border-radius: 15px;
+    margin-right: 10px;
+}
 .filter-room-general h2 {
     text-transform: uppercase;
     font-family: "History Pro", sans-serif;
@@ -108,7 +124,7 @@ header nav ul li a {
 
 }
 
-.container-filter-rooms .filters {
+.container-filter-rooms .fil-cont {
     width: 40%;
     height: 108% !important;
     height: 700px;
@@ -119,6 +135,7 @@ header nav ul li a {
     background-color: #f4f6fb;
     height: max-content;
     padding-left: 0px;
+    overflow-x: hidden;
 }
 
 #selectedCardDetails {
@@ -237,7 +254,7 @@ header nav ul li a {
     color: blue;
 }
 
-.container-filter-rooms .card-left-side .card {
+.container-filter-rooms .cardlar .card {
     width: 49%;
     height: 190px;
     margin-bottom: 10px;
@@ -249,41 +266,41 @@ header nav ul li a {
     position: relative;
 }
 
-.container-filter-rooms .card-left-side .room-area {
+.container-filter-rooms .cardlar .room-area {
     position: absolute;
     left: 10px;
     font-size: 13px;
 }
-.container-filter-rooms .card-left-side .room-area span:nth-child(2){
+.container-filter-rooms .cardlar .room-area span:nth-child(2){
     display: none;
 }
-.container-filter-rooms .card-left-side .room-area span:nth-child(3){
+.container-filter-rooms .cardlar .room-area span:nth-child(3){
     display: none;
 }
-.container-filter-rooms .card-left-side .card .left-side-content {
+.container-filter-rooms .cardlar .card .left-side-content {
     display: flex;
     justify-content: center;
     margin-top: 14px;
 }
 
-.container-filter-rooms .card-left-side .card .left-side-content p {
+.container-filter-rooms .cardlar .card .left-side-content p {
     font-weight: 300;
 
 
 }
 
-.container-filter-rooms .card-left-side .card .left-side-img {
+.container-filter-rooms .cardlar .card .left-side-img {
     display: flex;
     justify-content: center;
 }
 
-.container-filter-rooms .card-left-side .card img {
+.container-filter-rooms .cardlar .card img {
     width: 100px;
     height: 120px;
 padding-top: 30px;
 }
 
-.container-filter-rooms .card-left-side {
+.container-filter-rooms .cardlar {
     gap: 0px;
 }
 
@@ -342,13 +359,13 @@ align-items: center;
     font-weight: normal;
     font-size: 12px;
 }
-.container-filter-rooms .card-left-side .room-area .p-in:nth-child(2){
+.container-filter-rooms .cardlar .room-area .p-in:nth-child(2){
     display: none;
 }
-.container-filter-rooms .card-left-side .room-area .p-in:nth-child(3){
+.container-filter-rooms .cardlar .room-area .p-in:nth-child(3){
     display: none;
 }
-.container-filter-rooms .card-left-side .room-area .p-in span{
+.container-filter-rooms .cardlar .room-area .p-in span{
     display: none;
 }
 .container-filter-rooms .card-right-side .left-side-img .room-area .p-in{
@@ -397,7 +414,7 @@ align-items: center;
     color: white;
 }
 
-.card-left-side .description {
+.cardlar .description {
     display: none;
 
 }
@@ -444,8 +461,16 @@ align-items: center;
  .detail-right-side .detail-right-innner{
     background-color: white;
 }
-
-
+.card-filter-detail .detail-right-side .inner-calculator{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.card-filter-detail .detail-right-side .inner-calculator label{
+    color:#203E65 ;
+    font-weight: bold;
+}
 /* card detail 2 */
 .month-button {
     /* Add your default button styles here */
@@ -500,7 +525,7 @@ align-items: center;
       height: 100%;
   }
   .detail-right-side{
-      width: 30%;
+      width: 40%;
   }
   .card-filter-detail .swiper-pagination{
       display: none;
@@ -524,10 +549,30 @@ align-items: center;
 .card-filter-detail .detail-right-side .detail-right-innner {
 width: 80%;
 }
-.card-filter-detail .detail-right-side .detail-right-innner h3{
-  padding: 30px 30px 20px 30px;
+.card-filter-detail .detail-right-side .detail-right-innner .price{
+ width: 100% !important;
+ display: flex;
+ align-items: center;
+ justify-content: center;
   margin: 0px;
   width: max-content;
+}
+.card-filter-detail .detail-right-side .detail-right-innner .inner-calculator .percent{
+    width: 100px;
+}
+
+.card-filter-detail .detail-right-side .detail-right-innner h4{
+    padding-left: 10px;
+}
+.card-filter-detail .detail-right-side .detail-right-innner .price .price-inner{
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+.card-filter-detail .detail-right-side .detail-right-innner .price .price-inner span{
+    color: white;
+    font-weight: bold;
 }
 .card-filter-detail .detail-right-side .detail-right-innner h3 span:nth-child(1){
 font-size: 36px;
