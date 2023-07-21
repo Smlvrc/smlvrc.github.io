@@ -319,7 +319,7 @@ header .container-fluid .header-logo img{
   border-radius: 5px;
 }
 header .navbar {
-  height: 100px;
+  height: 90px;
   padding: 0px;
 }
 
@@ -1392,21 +1392,22 @@ box-shadow: 0 100px 80px rgb(0 0 0 / 5%), 0 12.5216px 10.0172px rgb(0 0 0 / 3%);
   background-color: #435ea8;
   /* max-width: 1300px; */
   /* margin: auto; */
+  padding: 0 10px;
 }
 .home-benef-cont{
   width: 100%;
   background-color: #161921;
+  padding: 15px 0;
 }
 .home-benefits{
   display: flex;
   /* padding: 6rem 0; */
-
 /* max-width: 1300px; */
 /* margin: 0 auto; */
 border-bottom-right-radius: 20px;
 border-bottom-left-radius: 20px;
 /* margin-right: 10px; */
-    padding: 10px 0px;
+    padding:  10px;
     max-width: 1250px;
     margin: auto;
 }
@@ -1425,6 +1426,7 @@ border-bottom-left-radius: 20px;
 
 .home-benefits .home-benefits-text-slider .swiper-slide-active{
 margin-top: 50px !important;
+padding-left: 20px;
 }
 
 .home-benefits  .home-benefits .swiper:last-child {
@@ -1507,8 +1509,8 @@ display: flex;
   height: 450px;
 }
 .home-benefits .swiper:last-child {
-  width: 55%;
-  height: 440px;
+  width: 57%;
+  height: 485px;
 }
 .home-benefits .home-benefits-image-slider {
   height: 450px;
