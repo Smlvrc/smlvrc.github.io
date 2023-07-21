@@ -16,9 +16,7 @@
     .container-filter-rooms .filters {
     padding-top: 0px;
     }
-    .form-container-main .form-inside{
-        max-width: 1075px;
-    }
+   
     .form-inside .form-container .form-group{
         width: 32%;
         margin-bottom: 0px;
@@ -43,7 +41,8 @@
     }
     .form-container-main .form-inside{
         margin: 0px;
-        padding: 15px;
+        padding: 40px;
+        margin: auto;
     }
     .hover-cards{
         padding: 60px 30px 100px 30px;
@@ -59,9 +58,38 @@
     }
     .form-container h3{
         margin-bottom: 10px;
+        margin-top: 50px;
     }
     .form-container-main .form-inside {
 padding-bottom: 40px;
+}
+.other-projects-container .project-cards .project-card:nth-child(2){
+    display: none;
+}
+.other-projects-container .project-cards .project-card:nth-child(3){
+    display: none ;
+}
+.other-projects-container .project-cards .project-card{
+    width: 100%;
+}
+.other-projects-container .project-cards{
+    flex-direction: column;
+}
+.other-projects-container .other-projects{
+    padding: 40px;
+}
+.other-projects-container .project-cards .project-card .tags .image-container{
+    width: 100%;
+    height: 100%;
+}
+.other-projects-container .project-cards .project-card .image-container img{
+    object-fit: cover;
+}
+.other-projects-container .project-cards .project-card .other-info .count p{
+    margin-bottom: 0px;
+}
+.other-projects-container{
+    padding: 35px 0px 35px 0px;
 }
 }
 
@@ -75,6 +103,7 @@ padding-bottom: 40px;
     .hover-cards .card{
         height: 500px;
     }
+
 }
 @media (max-width:1280px){
 header{
@@ -167,6 +196,9 @@ header .swiper-slide .slider-bottom .slider-bottom-right{
     margin-left: 0px;
     height: 50px;
 }
+.slider .slider-content .img-card img{
+    height: 60%;
+}
 
 }
 
@@ -196,6 +228,81 @@ width: 100%;
     }
     .head-section .head-container .head-right .image-lazy img{
         display: none;
+    }
+    .head-section .head-container .head-right .project-logo{
+        margin-bottom: 0px;
+    }
+    .first-slider {
+       padding-left: 20px;
+       padding-right: 20px;
+    }
+    .about-container #about-project {
+    padding: 0 3rem;
+    }
+    .about-container .about-up{
+        align-items: start;
+    }
+    .location-container #location {
+    padding: 0 3rem;
+    }
+    .adv-container .advantages{
+        padding: 50px 3rem;
+    }
+    .general-plan h2{
+        padding: 0 3rem;
+
+    }
+    .filter-room-general .filter-tab{
+        padding: 0 3rem;
+    }
+    .container-filter-rooms{
+        flex-direction: column;
+    }
+    .container-filter-rooms .fil-cont{
+        width: 100%;
+    }
+    .container-filter-rooms .filters .filtre-buttons{
+        width: 20%;
+    }
+    .container-filter-rooms .cardlar .card {
+    width: 23%;
+    }
+    .container-filter-rooms .card-right-side{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container-filter-rooms{
+        height: max-content;
+    }
+    .container-filter-rooms .fil-cont{
+        height: 300px !important;
+    }
+    .container-filter-rooms .card-right-side .card{
+        align-items: center;
+    }
+    .container-filter-rooms .card-right-side .card img{
+        width: 380px !important;
+    }
+    .container-filter-rooms .card-right-side .left-side-content{
+        margin-bottom: 10px;
+    }
+    .container-filter-rooms .card-right-side .left-side-content p{
+       display: none;
+    }
+    .container-filter-rooms .card-right-side .description{
+        width: 100%;
+        justify-content: space-between;
+    padding: 0 2rem;
+    }
+    .container-filter-rooms .room-area .plan-img{
+        display: flex;
+        justify-content: center;
+    }
+    .container-filter-rooms .card-right-side .left-side-img{
+        width: 100%;
+    }
+    .container-filter-rooms .cardlar .card img{
+        width: 100%;
     }
 }
 
@@ -306,6 +413,45 @@ header .swiper-slide .slider-bottom .slider-bottom-right button{
 header .swiper-slide .slider-bottom .slider-bottom-right{
     /* justify-content: start; */
 }
+.about-down{
+    height: 300px;
+}
+.about-down-left .img-card .img-content h3{
+    font-size: 20px;
+}
+.about-down-right .img2-text h3{
+    font-size: 20px;
+}
+
+}
+
+@media(max-width:680px){
+    .about-down{
+        flex-direction: column;
+        height: max-content;
+    }
+    .about-down-left {
+    width: 100%;
+    }
+    .about-down-right{
+        width: 100%;
+    }
+    .about-down-left .img-content{
+        bottom: 10px;
+    }
+    .about-down .about-down-left img {
+    width: 100%;
+    height: 80%;
+    }
+    .about-down-left .img-card .img-content p{
+        margin-bottom: 0px;
+    }
+    .about-container .about-up{
+        flex-direction: column;
+    }
+    .about-container .about-up p{
+        width: 100%;
+    }
 }
 
 @media(max-width:850px){
@@ -423,8 +569,20 @@ margin-right: 0px;
 }
 
 
-@media (max-width:820px){
-   
+@media (max-width:880px){
+    .slider .slider-content .img-card .img-content{
+        padding: 15px;
+        
+    }
+    .slider .slider-content .img-card img {
+height: 87%;
+}
+    .adv-container .slider {
+    height: 420px;
+    }
+    .adv-container .advantages h3{
+        font-size: 23px;
+    }
 }
 
 @media( max-width:912px){
@@ -515,6 +673,12 @@ transform: none;
      .calculator .right-side{
         height: 400px;
      }
+     .nav-tabs{
+        margin-bottom: 25px;
+     }
+     .slider-projects h2{
+        padding-top: 0px0;
+     }
 }
 @media (max-width:690px){
     .slider-container .inner_content img{
@@ -526,7 +690,18 @@ transform: none;
     .slider-container .inner_content{
         height: 350px;
     }
-    
+    .map-container .map-card{
+        height: max-content;
+        width: 100%;
+    }
+    .map-container .map-card img{
+     display: none !important;
+    }
+    .map-container .map-card {
+top: 300px;
+left: 0%;
+padding: 20px;
+}
 }
 
 @media(max-width:640px){
@@ -599,6 +774,20 @@ transform: none;
     .form-inside .form-container button{
         font-size: 14px;
     }
+    .container-filter-rooms .obyekt-filter{
+        flex-direction: column;
+    }
+    .other-projects-container .project-cards .project-card:nth-child(2){
+        display:flex;
+        flex-direction: column;
+    }
+    .other-projects-container .project-cards .project-card:nth-child(3){
+        display: flex;
+        flex-direction: column;
+    }
+    .other-projects-container{
+        padding: 35px 0px 35px 0px;
+    }
 }
 
 @media(max-width:500px){
@@ -640,10 +829,22 @@ transform: none;
     form .terms-cond{
         width: 80%;
     }
+    .about-down .about-down-left img {
+    height: 60%;
+    }
+    .about-down-right .img-card2 img {
+    width: 70%;
+    }
+    .adv-container .slider{
+        height: 450px;
+    }
+    .slider .slider-content .img-card .img-content{
+        padding: 15px;
+    }
 }
 
 
-@media (max-width:414px){
+@media (max-width:560px){
     .head-section{
         padding: 10px;
     }
@@ -704,7 +905,7 @@ transform: none;
         border-radius: 20px;
     }
     .slider .slider-content .img-card{
-        width: 390px;
+        width: 460px;
     }
     .adv-container .slide{
         margin-right: 0px;
@@ -732,16 +933,70 @@ overflow: scroll;
     }
     .adv-container .advantages{
         margin-bottom: 30px;
+        padding-bottom: 35px;
+        padding-top: 35px;
     }
     .general-plan h2{
         margin-bottom: 0px;
     }
     .slider-projects .slider-project-container{
-        flex-direction: row;
+        flex-direction: column;
     }
     .map-container .map-card{
         width: 80%;
     }
+    .container-filter-rooms .cardlar .card{
+        width: 100%;
+        height: 135px;
+        display: flex;
+        flex-direction: row;
+    }
+    .container-filter-rooms .filters{
+        height: 400px !important;
+    }
+    .container-filter-rooms .cardlar .card img{
+        width: 80px;
+    }
+    .container-filter-rooms .card-right-side .card img{
+height: 200px !important;
+        width: 200px !important;
+    }
+    .container-filter-rooms .card-right-side {
+height: 400px;
+    }
+    .container-filter-rooms .card-right-side .left-side-img .room-area{
+        margin:0px;
+    }
+    .container-filter-rooms .card-right-side .left-side-content{
+        margin-top: 5px;
+        padding: -15px;
+        
+    }
+    .container-filter-rooms .card-right-side .description{
+        flex-direction: column;
+    }
+    .container-filter-rooms .card .description span{
+        display: none;
+    }
+    .card-right-side .description a{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .container-filter-rooms{
+        padding: 0px !important;
+    }
+    .container-filter-rooms .obyekt-filter .left{
+        width: 100% !important;
+    }
+    .container-filter-rooms .obyekt-filter .right{
+        width: 100%;
+    }
+    .map-container .map-card {
+        top: 230px;
+        left: 9%;
+        padding: 20px;
+        }
 }
 
 
