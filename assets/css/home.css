@@ -1389,20 +1389,26 @@ box-shadow: 0 100px 80px rgb(0 0 0 / 5%), 0 12.5216px 10.0172px rgb(0 0 0 / 3%);
 
 /* benefits slider */
 #home-benefits{
+  background-color: #435ea8;
+  /* max-width: 1300px; */
+  /* margin: auto; */
+}
+.home-benef-cont{
+  width: 100%;
   background-color: #161921;
-  max-width: 1300px;
-  margin: auto;
 }
 .home-benefits{
   display: flex;
   /* padding: 6rem 0; */
-background-color: #161921;
-max-width: 1300px;
-margin: 0 auto;
+
+/* max-width: 1300px; */
+/* margin: 0 auto; */
 border-bottom-right-radius: 20px;
 border-bottom-left-radius: 20px;
 /* margin-right: 10px; */
     padding: 10px 0px;
+    max-width: 1250px;
+    margin: auto;
 }
 
 @media (max-width: 900px) {
