@@ -10,7 +10,7 @@ box-sizing: border-box;
  }
  .head-section{
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
  }
@@ -519,6 +519,8 @@ align-items: start;
 }
 header .navbar{
   background-color: white;
+  max-width: 1250px;
+  margin: auto0;
 }
 .adv-container .slide img {
   width: 100%;
@@ -628,8 +630,13 @@ font-family: var(--font-family2);
 }
 
 /* last map */
+.map-cont{
+  width: 100%;
+}
 .map-container{
   position: relative;
+  max-width: 1250px;
+  margin: auto;
 }
 .map-container iframe{
   width: 100%;
@@ -638,7 +645,7 @@ font-family: var(--font-family2);
 .map-container .map-card{
   position: absolute;
   top: 15px;
-  left: 60px;
+  left: 50px;
   width: 398px;
   height: 500px;
 }
@@ -1228,6 +1235,8 @@ button[type="submit"] {
     font-weight: 400;
     text-transform: uppercase;
     padding-top: 60px;
+    max-width: 1250px;
+    margin: auto;
 
   }
   .slider-project-general h2{
@@ -1270,7 +1279,7 @@ button[type="submit"] {
   }
  
   .slider-projects .slider-project-container{
-   width: 100%;
+  max-width: 1250px;
     margin: 40px auto 80px auto;
     position: relative;
     display: flex;
@@ -1323,4 +1332,18 @@ button[type="submit"] {
   }
   footer{
     background-color: #161921 !important;
+    width: 100%;
+
   }
+footer .footer-top{
+  max-width: 1250px;
+  margin: auto;
+}
+footer .footer-middle{
+  max-width: 1250px;
+  margin: auto;
+}
+footer .footer-bottom{
+  max-width: 1250px;
+  margin: auto;
+}

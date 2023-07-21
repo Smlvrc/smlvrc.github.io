@@ -1066,6 +1066,14 @@ footer .footer-top{
   display: flex;
   justify-content: space-between;
 }
+footer .footer-top .logo{
+width: 120px;
+height: 40px;
+}
+footer .footer-top .logo img{
+width: 100%;
+height:100%;
+}
 .footer-top .social-icons a{
   margin-right: 20px;
   color: white;
@@ -1173,6 +1181,8 @@ footer a{
   margin-right: 5px;
 }
 .allnews .nav-tabs{
+padding: 0px 30px;
+  max-width: 1250px;
   border-bottom: 0px;
 }
 .allnews .nav-tabs li  a{
@@ -1187,15 +1197,20 @@ background-color: #4398ff;
 color: white;
 }
 .allnews .tab-content{
-  margin-top: 100px;
+  padding: 40px;
+  margin-top: 30px;
+  background-color: white;
 }
 .tab-content .tab-up{
   background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 35px;
-  margin-top: 60px;
+ 
  border-radius: 20px;
+}
+.tab-content h3{
+  padding-left: ;
 }
 .tab-content .tab-up .wrapper-right-img{
   width: 90%;
@@ -1223,8 +1238,13 @@ color: white;
   width: 100%;
 }
 .general-all-news .allnews{
-  max-width: 1300px;
+  flex-direction: column;
+  width: 100%;
   margin: auto;
+  padding: 0px;
+}
+.general-all-news .allnews h2{
+  padding-left: 30px;
 }
 .swiper-card{
   width: 370px;
@@ -1281,9 +1301,7 @@ border-radius: 20px;
 .slide-image-card{
   border-radius: 20px;
 }
-.allnews h2{
-  margin-bottom: 30px;
-}
+
 
 /* news description section */
 .new-description .news-des-inner{
