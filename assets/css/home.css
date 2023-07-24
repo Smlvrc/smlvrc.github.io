@@ -483,7 +483,7 @@ font-size: 20px;
     margin-top: 20px;
     margin-bottom: 0px;
     transition: 1s;
- font-family: var(--font-family2);
+ 
 line-height: 3rem;  
 font-weight: bold;
 }
@@ -585,7 +585,7 @@ color: white;
   padding-top: 70px;
 }
 .calculator-container .calculator{
-  max-width: 1250px;
+  max-width: 1200px;
 margin: 40px auto 40px;
 }
 .calculator-container .calculator h2{
@@ -747,7 +747,7 @@ margin: 0 auto;
 
 }
 .form-container-main .form-inside{
-  max-width: 1250px;
+  max-width: 1200px !important;
   padding: 70px 15px 0 15px;
   
   margin: auto;
@@ -945,7 +945,7 @@ li a.active{
   padding-bottom: 70px;
 }
 .news-container{
- max-width: 1250px;
+ max-width: 1200px;
  margin: auto;
  position: relative;
 }
@@ -1094,7 +1094,7 @@ opacity: 0;
 }
 /* footer */
 .footer-inner{
-  padding: 48px;
+  width: 100%;
   padding-bottom: 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1110,7 +1110,9 @@ flex-direction: column;
 }
 
 footer .footer-top{
-  width: 100%;
+  max-width: 1200px;
+  padding-top: 40px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -1132,9 +1134,10 @@ height:100%;
 }
 
 .footer-middle{
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  margin: 35px 0px 50px 0px;
+  margin: 35px auto 50px auto;
   justify-content: space-between;
 }
 .footer-middle .left-column{
@@ -1200,6 +1203,8 @@ footer i{
   width: 100%;
 }
 .footer-bottom{
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   color: white;

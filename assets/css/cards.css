@@ -42,7 +42,7 @@ width: 96px;
  .head-section .head-container{
   display: flex;
   justify-content: space-between;
-  max-width: 1250px;
+  max-width: 1200px;
   margin: auto;
   align-items: end;
   padding-top: 40px;
@@ -200,7 +200,7 @@ color: rgba(42,91,108,.8);
   width: 100%;
  }
  .first-slider .swiper {
- max-width: 1250px;
+ max-width: 1200px;
   height: 614px;
 }
 
@@ -289,7 +289,7 @@ height: 30px;
   width: 100%;
 }
 .about-container #about-project{
-  max-width: 1250px;
+  max-width: 1200px;
   margin: auto;
   
 }
@@ -476,7 +476,7 @@ align-items: start;
 
 }
 .location-container #location{
- max-width: 1250px;
+ max-width: 1200px;
 
  margin:70px auto 70px auto;
 }
@@ -497,7 +497,7 @@ align-items: start;
 
 
 .adv-container .advantages{
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 70px auto 70px auto;
 }
 .adv-container .advantages h3{
@@ -661,7 +661,7 @@ font-family: var(--font-family2);
 .map-container .map-card{
   position: absolute;
   top: 15px;
-  left: 50px;
+  left: 70px;
   width: 398px;
   height: 500px;
 }
@@ -733,7 +733,6 @@ font-size: 14px;
 }
 .general-plan{
 
-max-width: 1250px;
 margin: 30px auto 70px auto;
 
 }
@@ -817,7 +816,8 @@ margin: 30px auto 70px auto;
   padding: 0px;
 }
 .general-plan h2{
-
+max-width: 1200px;
+margin: auto;
   font-family: var(--font-family2);
   font-weight: 400;
   line-height: 4rem;
@@ -830,7 +830,7 @@ margin: 30px auto 70px auto;
   border: none;
 }
 .general-plan .gen-plan-img{
-  background-image: url('../images/1-13\ \(1\).png');
+  background-image: url('../images/11.jpg');
   height: 722px;
   background-size: cover;
   position: relative;
@@ -924,13 +924,12 @@ opacity: 1;
 }
 .general-plan .gen-plan-img .target-plan{
   position: absolute;
-  left: 340px;
-  top: 450px;
-  width: 100px;
+  left: 383px;
+  top: 442px;
+  width: 84px;
   height: 203px;
   clip-path: polygon(-89px 111px, 67% 13%, 221% 61%, -4px 113%);
-  transition: background-color 0.3s ease;
-  /* transform: rotate(-5deg); */
+  transition: background-color 0.3s ease 0s;
   opacity: 0.9;
 }
 .general-plan .gen-plan-img .card{
@@ -1022,14 +1021,13 @@ font-weight: 500;
 }
 .general-plan .gen-plan-img .target-plan2{
   position: absolute;
-  left: 638px;
-  bottom: 56px;
-  width: 52px;
-  height: 158px;
-  /* clip-path: polygon(-99px 229px, 54% 18%, 160% 38%, 72px 104%); */
-  transition: 0.5s;
-  background-color: rgba(0,123,251,.24);
-  opacity: 0;
+    left: 729px;
+    bottom: 3px;
+    width: 97px;
+    height: 199px;
+    transition: all 0.5s ease 0s;
+    background-color: rgba(0, 123, 251, 0.24);
+    opacity: 0;
 }
 .general-plan  .card-body{
   padding: 0px;
@@ -1041,9 +1039,9 @@ font-weight: 500;
 }
 .general-plan .plan-building2{
   position: absolute;
-  bottom: 78px;
- right: 620px;
- display: none;
+  bottom: 120px;
+  right: 87px;
+  display: none;
 }
 .general-plan .gen-plan-img .target-plan2:hover + .plan-building2 {
   display: block;
@@ -1097,20 +1095,20 @@ font-weight: 500;
 }
 .gen-plan-img .plan-building3{
   position: absolute;
-  right: 330px;
-  display: none;
-  bottom: 70px;
+    right: 343px;
+    display: none;
+    bottom: 141px;
 }
 .gen-plan-img .target-plan3{
   position: absolute;
-    left: 485px;
-    bottom: 50px;
-    width: 70px;
-    height: 170px;
-    transition: 0.5s;
-    background-color: rgba(0,123,251,.24);
-    /* transform: rotate(-1deg); */
-    opacity: 0;
+  left: 469px;
+  bottom: 58px;
+  width: 102px;
+  height: 161px;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(0, 123, 251, 0.24);
+  transform: rotate(-1deg);
+  opacity: 0;
 }
 .gen-plan-img .target-plan3:hover{
   opacity: 0.9;
@@ -1126,7 +1124,7 @@ font-weight: 500;
   margin-top: 75px;
 }
 .other-projects-container .other-projects{
-  max-width: 1250px;
+  max-width: 1200px;
   margin:auto;
 }
 .other-projects .tags{
@@ -1217,6 +1215,7 @@ button[type="submit"] {
   .slider-projects{
     width: 100%;
     background-color: #f4f7f9;
+    padding-bottom: 40px;
   }
   .slider-projects .live-camera{
     margin-right: 25px;
@@ -1247,12 +1246,12 @@ button[type="submit"] {
     color: white;
   }
   .slider-projects h2{
-    
+    max-width: 1200px !important;
     font-family: var(--font-family2);
     font-weight: 400;
     text-transform: uppercase;
     padding-top: 60px;
-    max-width: 1250px;
+    max-width: 0px;
     margin: auto;
 
   }
@@ -1296,7 +1295,7 @@ button[type="submit"] {
   }
  
   .slider-projects .slider-project-container{
-  max-width: 1250px;
+  max-width: 1200px;
     margin: 40px auto 80px auto;
     position: relative;
     display: flex;
@@ -1353,15 +1352,12 @@ button[type="submit"] {
 
   }
 footer .footer-top{
-  max-width: 1250px;
+  max-width: 1200px;
   margin: auto;
 }
-footer .footer-middle{
-  max-width: 1250px;
-  margin: 35px 0px 50px 0px;
-}
+
 footer .footer-bottom{
-  max-width: 1250px;
+  max-width: 1200px;
   margin: auto;
 }
 .footer-inner{
