@@ -123,7 +123,7 @@ header .swiper-slide .slider-bottom .slider-bottom-right{
     display: none;
   }
   .news-container .news-head{
-    width: 100%;
+    /* width: 100%; */
   }
 }
 @media (max-width:1242px){

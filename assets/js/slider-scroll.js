@@ -27,8 +27,12 @@ var swiperText = new Swiper(".home-benefits-image-slider", {
         },
         slideChangeTransitionEnd: function () {
             this.params.speed = 0;
+            if (this.isEnd) {
+                const otherSection = document.getElementById('calculator-container');
+                otherSection.scrollIntoView({ behavior: 'smooth' });
+              }
         },
-    },
+    }
 });
 var swiperImage = new Swiper('.home-benefits-text-slider', {
     slidesPerView: 2,
@@ -58,6 +62,15 @@ var swiperImage = new Swiper('.home-benefits-text-slider', {
     //     }
     // },
     mousewheelInertia: 800,
+    on: {
+        slideChangeTransitionEnd: function() {
+          // Slider'ın son slayda ulaşılması durumunda başka bir bölüme geçin
+          if (this.isEnd) {
+            const otherSection = document.getElementById('otherSection');
+            otherSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+    }
 });
 
 // swiperImage.on('slideChangeTransitionStart', function () {
