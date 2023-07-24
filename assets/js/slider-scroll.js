@@ -63,13 +63,13 @@ var swiperImage = new Swiper('.home-benefits-text-slider', {
     // },
     mousewheelInertia: 800,
     on: {
-        slideChangeTransitionEnd: function() {
-          // Slider'ın son slayda ulaşılması durumunda başka bir bölüme geçin
-          if (this.isEnd) {
-            const otherSection = document.getElementById('otherSection');
-            otherSection.scrollIntoView({ behavior: 'smooth' });
-          }
-        }
+        // slideChangeTransitionEnd: function() {
+        //   // Slider'ın son slayda ulaşılması durumunda başka bir bölüme geçin
+        //   if (this.isEnd) {
+        //     const otherSection = document.getElementById('otherSection');
+        //     otherSection.scrollIntoView({ behavior: 'smooth' });
+        //   }
+        // }
     }
 });
 
@@ -80,6 +80,8 @@ var swiperImage = new Swiper('.home-benefits-text-slider', {
 //         swiperText.slidePrev();
 //     }
 // });
+
+function handleMouseWheel(){
 window.addEventListener("wheel", function (event) {
     if (event.deltaY > 0) {
         console.log(event.deltaY);
@@ -89,6 +91,7 @@ window.addEventListener("wheel", function (event) {
         swiperText.slidePrev();
     }
 });
+}
 // var istrueslider = false
 // swiperText.on('slideChangeTransitionStart', function () {
 //     if (istrueslider) {
@@ -100,7 +103,7 @@ window.addEventListener("wheel", function (event) {
 //     }
 // });
 
-
+function handleKeyboard(){
 document.addEventListener("keydown", function (event) {
     var sectionRect = section.getBoundingClientRect();
 
@@ -116,6 +119,39 @@ document.addEventListener("keydown", function (event) {
     // }
 
 });
+}
+
+
+
+
+window.addEventListener('scroll', function() {
+    // Sayfanın kaydırma pozisyonunu alın
+    const scrollPosition = window.scrollY;
+  
+    // Slider'ın sınırları (offset değerleri)
+    const sliderTop = document.querySelector('.home-benef-cont').offsetTop;
+    const sliderBottom = sliderTop + document.querySelector('.home-benef-cont').offsetHeight;
+  
+    // Sayfanın slider'ın sınırları içinde olup olmadığını kontrol edin
+    if (scrollPosition >= sliderTop && scrollPosition <= sliderBottom) {
+      // Eğer sayfa slider'ın sınırları içindeyse, klavye ve fare olaylarını dinleyin
+      document.addEventListener('keydown', handleKeyboard);
+      document.addEventListener('wheel', handleMouseWheel);
+    // swiperImage.controller.control = swiperText;
+    // swiperText.controller.control = swiperImage;
+ 
+    } else {
+      // Sayfa slider'ın sınırları dışındaysa, klavye ve fare olaylarını kaldırın
+      document.removeEventListener('keydown', handleKeyboard);
+      document.removeEventListener('wheel', handleMouseWheel);
+   
+    }
+})
+
+
+
+
+
 
 
 swiperImage.on('slideChange', function (e) {
