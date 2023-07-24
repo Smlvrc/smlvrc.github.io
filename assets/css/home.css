@@ -4,6 +4,7 @@ padding: 0;
 box-sizing: border-box;
 list-style: none;
 text-decoration: none;
+font-family: 'Poppins', sans-serif;
 }
 :root{
   --font-family2: Baskerville;
@@ -16,6 +17,8 @@ background-repeat: no-repeat;
 background-size: contain;
 padding-top: 0px !important;
 position: relative;
+ font-family: 'Poppins', sans-serif;;
+
 }
 header .navbar{
   background-color: none;
@@ -49,6 +52,9 @@ header .header-right .fa-arrow-down{
   background: none;
   color: white;
   font-size: 5px;
+}
+header .header-right li{
+  display: flex;
 }
 header .options {
   display: none;
@@ -113,6 +119,7 @@ header  .swiper {
 }
 .navbar-expand-lg .navbar-nav .nav-link{
   padding-right: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 header .header-right{
   display: flex;
@@ -139,7 +146,7 @@ header nav:hover{
 }
 
 header nav:hover a{
-  color:#3200f0;
+  color:black;
 }
 header nav:hover .header-num a{
   color:black;
@@ -152,17 +159,17 @@ header nav :hover .icon span{
 }
 
 header nav .icon span:hover{
-  color: #491df2;
+  color: #491df2 !important;
 }
 header nav:hover .fa-arrow-down{
   color:black;
 }
 header nav  .icon span :hover .fa-arrow-down{
-  color: #3200f0;
+  color: #3200f0 !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover{
-  color: #3200f0;
+  color: #3200f0 !important;
 }
 header .swiper-slide {
   text-align: center;
@@ -174,6 +181,16 @@ header .swiper-slide {
   position: relative;
 
 }
+header .header-logo .logo2{
+  display: none;
+}
+header nav:hover .logo1{
+  display: none !important;
+}
+header nav:hover .logo2{
+  display: block !important;
+}
+
  .swiper-slide {
   font-size: 18px;
   height: auto;
@@ -268,6 +285,7 @@ header .swiper-slide .slider-bottom .slider-bottom-left{
 header .swiper-slide .slider-bottom .slider-bottom-left h3{
   font-size: 70px;
   margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 header .swiper-slide .slider-bottom .slider-bottom-left p{
   color:rgb(241, 237, 228);
@@ -284,6 +302,7 @@ color: white;
 border-radius: 10px;
 font-weight: 500;
 font-size: 17px;
+font-family: 'Poppins', sans-serif;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after{
@@ -292,7 +311,7 @@ font-size: 17px;
 header .swiper-slide .slider-bottom .slider-bottom-right{
   flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   padding-right: 170px;
 }
 header .slider-buttons{
@@ -550,11 +569,11 @@ color: white;
   margin: auto;
 }
 .container-inside-main .mt-50{
-  font-family: "Prosto One",sans-serif;
+
   font-size: 2.5rem;
   margin-bottom: 60px;
   color: #161921;
-  font-weight: bold;
+  
 }
 .container-inside-main .cards-common{
   justify-content: space-between;
@@ -562,10 +581,10 @@ color: white;
 
 /* calculator section */
 .calculator-container{
-  width: 98%;
+  width: 100%;
 }
 .calculator-container .calculator{
-  max-width: 1200px;
+  max-width: 1250px;
 margin: 40px auto 40px;
 }
 .calculator-container .calculator h2{
@@ -641,7 +660,7 @@ justify-content: space-between;
   border: 2px solid transparent;
   border-radius: 5px;
   padding: 11px 46px;
-  background-color:#E2E5E8;
+  background-color:#2D6478;
   color: white;
   transition: 0.2s ease-in-out;
 }
@@ -1209,7 +1228,7 @@ footer a{
   margin-right: 5px;
 }
 .allnews .nav-tabs{
-padding: 0px 30px;
+
   max-width: 1250px;
   border-bottom: 0px;
 }
@@ -1219,25 +1238,42 @@ padding: 0px 30px;
 }
 
 .allnews .nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
+
 .nav-tabs > li.active > a:hover {
 background-color: #4398ff;
 color: white;
 }
+.nav-tabs > li.active > a:focus{
+  outline: none;
+}
 .allnews .tab-content{
-  padding: 40px;
-  margin-top: 30px;
-  background-color: white;
+  background-color:#f4f7f9;
 }
 .tab-content .tab-up{
+  padding: 45px;
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 35px;
+ 
  
  border-radius: 20px;
 }
-
+.tab-content #menu1{
+  padding: 40px;
+  background-color: #f4f7f9;
+}
+.tab-content #menu1 .tab-down{
+  background-color: #f4f7f9;}
+.tab-content-up{
+  padding: 40px;
+}
+.tab-content #home{
+  padding: 40px;
+  background-color: #f4f7f9;
+}
+.tab-content #home h3{
+  padding-bottom: 40px;
+}
 .tab-content .tab-up .wrapper-right-img{
   width: 90%;
 }
@@ -1247,7 +1283,7 @@ color: white;
 }
 .tab-content .tab-up .wrapper-left{
   width: 40%;
-  padding: 35px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1269,12 +1305,10 @@ color: white;
   margin: auto;
   padding: 0px;
 }
-.general-all-news .allnews h2{
-  padding-left: 30px;
-}
+
 .swiper-card{
-  width: 370px;
-  height: 390px;
+  width: 405px;
+  height: 407px;
 position: relative;
 background-color: white;
 border-radius: 20px;
@@ -1288,8 +1322,8 @@ border-radius: 20px;
 .swiper-card h5{
   position: absolute;
   top: 0px;
-  margin: 10px;
-  padding: 20px;
+ padding: 30px;
+ margin: 10px;
   background-color: white;
   border-radius: 10px;
 }
@@ -1323,6 +1357,7 @@ border-radius: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+padding-top: 30px;
 }
 .slide-image-card{
   border-radius: 20px;
@@ -1343,6 +1378,7 @@ border-radius: 20px;
 }
 .new-description .news-des-inner .text-block{
   margin-top: 100px;
+  color:  #65676e;;
 }
 .new-description .news-des-inner h5, .swiper-date, .link-to-back{
   padding-left: 30px;
@@ -1350,6 +1386,11 @@ border-radius: 20px;
   color: black;
   line-height: 1.4;
   transition: 1s;
+}
+
+.new-description .news-des-inner  .swiper-date, .link-to-back{
+color: #65676e;
+
 }
 .new-description .news-des-inner .link-to-back:hover .link-button{
 background-color: #f4f7f9;

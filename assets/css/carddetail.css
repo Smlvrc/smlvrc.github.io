@@ -16,7 +16,7 @@ header {
 }
 
 header .container-fluid .header-logo img {
-    width: 96px;
+    width: 130px;
 }
 
 .card-detail {
@@ -84,6 +84,7 @@ header nav ul li a {
     margin: auto;
     padding-right: 0px;
     padding-left: 0px;
+    
 }
 .nav-tabs{
     border: none;
@@ -199,7 +200,7 @@ padding-right: 0px;
 }
 .container-filter-rooms .obyekt-filter .left{
      width: 37%;
-     height: 702px;
+     height: 695px;
      display: flex;
      flex-wrap: wrap;
      overflow-y: scroll;
@@ -233,7 +234,7 @@ height: 100%;
     width: 260px;
     height: 50px;
     border-radius: 10px;
-    background-color: #2a5b6c;
+    background-color: #5a998d;
 }
 .container-filter-rooms .obyekt-filter .right img{
     margin-top: 30px;
@@ -242,19 +243,20 @@ height: 100%;
     height: 430px;
 }
 .container-filter-rooms .obyekt-filter .left img{
-    width: 95%;
-    height: 75%;
+    width: 68%;
+    height: 60%;
 }
 .container-filter-rooms .obyekt-filter .right{
     margin-left: 20px;
      width: 60%;
-     height: 702px;
+     height: 695px;
      border-radius: 35px;
      background-color: white;
 }
 .container-filter-rooms .obyekt-filter .card{
     width: 189px;
     height: 190px;
+    align-items: center;
    
 }
 .card-content {
@@ -333,12 +335,14 @@ height: 100%;
     align-items: center;
     justify-content: space-between;
     position: relative;
+padding-left: 14px;
 }
 
 .container-filter-rooms .cardlar .room-area {
     position: absolute;
-    left: 10px;
+    left: 15px;
     font-size: 13px;
+
 }
 .container-filter-rooms .cardlar .room-area span:nth-child(2){
     display: none;
@@ -348,8 +352,10 @@ height: 100%;
 }
 .container-filter-rooms .cardlar .card .left-side-content {
     display: flex;
-    justify-content: center;
-    margin-top: 14px;
+    justify-content: start;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 100%;
 }
 
 .container-filter-rooms .cardlar .card .left-side-content p {
@@ -364,8 +370,8 @@ height: 100%;
 }
 
 .container-filter-rooms .cardlar .card img {
-    width: 100px;
-    height: 120px;
+    width:95px;
+    height: 108px;
 padding-top: 30px;
 }
 
@@ -494,13 +500,19 @@ align-items: center;
     border-radius: 8px;
     text-decoration: none;
     color: white;
-    background-color: #2a5b6c;
+    background-color:#5a998d ;
     margin-left: 152px;
     display: inline-block;
     width: 260px;
     height: 50px;
     align-self: center;
     padding-top: 10px;
+}
+.calculator .right-side{
+    background-color:#5a998d ;
+}
+.calculator .left-side form .for-select-area .for-button button{
+    background-color:#5a998d ;
 }
 
 .container-filter-rooms .card .description span {
@@ -509,7 +521,7 @@ align-items: center;
 }
 
 .container-filter-rooms .card p:nth-child(1) {
-    font-weight: bold;
+    font-size: 13px;
 }
 
 .container-filter-rooms .card-right-side .card {
@@ -559,7 +571,7 @@ align-items: center;
       border-radius: 10px;
   }
   .month-button.selected {
-    background-color: blue !important;
+    background-color: blue;
     color: white;
   }
   .card-filter-detail{

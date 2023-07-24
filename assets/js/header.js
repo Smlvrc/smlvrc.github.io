@@ -41,6 +41,9 @@ window.addEventListener('scroll', function () {
   const phoneNumber = document.querySelector('.navbar a');
   const ruSpan = document.querySelector('.icon span');
   const phoneNumberLink = document.querySelector('.header-num a');
+  const navlink = document.querySelector('.nav-link');
+  var logo1 = document.querySelector(".logo1");
+  var logo2 = document.querySelector(".logo2");
 
   const scrolledBgColor = 'white'; // Scroll yaparken navbarın arka plan rengi
   const defaultBgColor = ''; // Scroll yapmadığınızda navbarın varsayılan arka plan rengi
@@ -55,7 +58,9 @@ window.addEventListener('scroll', function () {
     icons.forEach(function (icon) {
       icon.style.color = scrolledColor;
     });
-
+  // When scrolled, hide logo1 and show logo2
+  logo1.style.display = "none";
+  logo2.style.display = "block";
     options.style.backgroundColor = scrolledBgColor;
     phoneNumber.style.color = scrolledColor;
     ruSpan.style.color = scrolledColor;
@@ -68,6 +73,9 @@ window.addEventListener('scroll', function () {
     icons.forEach(function (icon) {
       icon.style.color = defaultColor;
     });
+     // When not scrolled, show logo1 and hide logo2
+     logo1.style.display = "block";
+     logo2.style.display = "none";
     options.style.backgroundColor = defaultBgColor;
     phoneNumber.style.color = defaultColor;
     ruSpan.style.color = defaultColor;
@@ -76,6 +84,18 @@ window.addEventListener('scroll', function () {
 });
   
 
+  
+ // Event handler for when hovering over the .nav element
+ nav.addEventListener("mouseover", function () {
+  logo1.style.display = "none";
+  logo2.style.display = "block";
+});
+
+// Event handler for when the mouse leaves the .nav element
+nav.addEventListener("mouseout", function () {
+  logo1.style.display = "block";
+  logo2.style.display = "none";
+});
   
 // select language
 
