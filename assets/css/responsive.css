@@ -422,7 +422,38 @@ header .swiper-slide .slider-bottom .slider-bottom-right{
 .about-down-right .img2-text h3{
     font-size: 20px;
 }
+.filter-room-general .filter-tab{
+    padding-bottom: 50px;
+}
+.container-filter-rooms .obyekt-filter{
+    display: flex;
+    flex-direction: column;
+}
+.container-filter-rooms .obyekt-filter .left{
+    height: 400px;
+}
+.container-filter-rooms .obyekt-filter .card {
+width: 100%;
+align-items: center;
+}
+.container-filter-rooms .obyekt-filter .left img {
+width: 80px;
+}
+.container-filter-rooms .obyekt-filter .right img{
+    height: 50%;
+}
+.container-filter-rooms .obyekt-filter .right{
+    margin-left: 0px;
+    margin-top: 30px;
+    height: 620px;
+}
+.container-filter-rooms .card-right-side .left-side-img .plan-img{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 
+}
 }
 
 @media(max-width:680px){
