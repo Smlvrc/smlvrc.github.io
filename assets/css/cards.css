@@ -542,7 +542,7 @@ header .navbar{
   height: auto;
 }
 
-.adv-container .slider-nav {
+.adv-container .slider-nav:nth-child(1) {
   display: flex;
   justify-content: center;
   margin-top: 10px;
