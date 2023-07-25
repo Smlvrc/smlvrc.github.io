@@ -582,6 +582,7 @@ color: white;
 /* calculator section */
 .calculator-container{
   width: 98%;
+  padding-top: 70px;
 }
 .calculator-container .calculator{
   max-width: 1200px;
@@ -1434,16 +1435,12 @@ box-shadow: 0 100px 80px rgb(0 0 0 / 5%), 0 12.5216px 10.0172px rgb(0 0 0 / 3%);
 }
 
 /* benefits slider */
-#home-benefits{
-  background-color: #435ea8;
-  /* max-width: 1300px; */
-  /* margin: auto; */
-  padding: 0 10px;
-}
+
 .home-benef-cont{
   width: 100%;
   background-color: #161921;
-  padding: 15px 0;
+  padding: 10px 0;
+  padding-top: 100px;
 }
 .home-benefits{
   display: flex;
@@ -1501,7 +1498,7 @@ align-items: center;
   /* height: 300px; */
 display: flex;
 justify-content: start;
-align-items: start;
+align-items: center;
 /* margin-top: 100px; */
 /* margin-top: -40px; */
 /* background-color: #161921; */

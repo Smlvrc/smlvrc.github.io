@@ -35,7 +35,7 @@ var swiperText = new Swiper(".home-benefits-image-slider", {
     }
 });
 var swiperImage = new Swiper('.home-benefits-text-slider', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     direction: 'vertical',
     initialSlide: 0,
     freeMode: true,
@@ -81,7 +81,7 @@ var swiperImage = new Swiper('.home-benefits-text-slider', {
 //     }
 // });
 
-function handleMouseWheel(){
+// function handleMouseWheel(){
 window.addEventListener("wheel", function (event) {
     if (event.deltaY > 0) {
         console.log(event.deltaY);
@@ -91,7 +91,7 @@ window.addEventListener("wheel", function (event) {
         swiperText.slidePrev();
     }
 });
-}
+// }
 // var istrueslider = false
 // swiperText.on('slideChangeTransitionStart', function () {
 //     if (istrueslider) {
@@ -103,49 +103,63 @@ window.addEventListener("wheel", function (event) {
 //     }
 // });
 
-function handleKeyboard(){
+// function handleKeyboard(){
 document.addEventListener("keydown", function (event) {
-    var sectionRect = section.getBoundingClientRect();
+    // var sectionRect = section.getBoundingClientRect();
 
     // if (sectionRect.height < window.innerHeight-300 && sectionRect.bottom >= 200) {
         if (event.key === "ArrowUp") {
             // swiperImage.slidePrev();
-            swiperImage.slideNext();
+            // swiperText.slidePrev();
         }
         else if (event.key === "ArrowDown") {
             // swiperImage.slideNext();
-            swiperImage.slidePrev();
+            // swiperText.slideNext();
         }
     // }
 
 });
-}
+// }
 
 
 
-
+var prevscrollPosition =0;
 window.addEventListener('scroll', function() {
     // Sayfanın kaydırma pozisyonunu alın
-    const scrollPosition = window.scrollY;
-  
+    const scrollPosition = parseInt(window.scrollY);
+    var dif=scrollPosition-prevscrollPosition
     // Slider'ın sınırları (offset değerleri)
-    const sliderTop = document.querySelector('.home-benef-cont').offsetTop;
-    const sliderBottom = sliderTop + document.querySelector('.home-benef-cont').offsetHeight;
+    const sliderTop = document.querySelector('#card-main').offsetTop;
+    const sliderBottom = sliderTop + document.querySelector('#card-main').offsetHeight;
   
+    console.log(sliderBottom,scrollPosition)
     // Sayfanın slider'ın sınırları içinde olup olmadığını kontrol edin
-    if (scrollPosition >= sliderTop && scrollPosition <= sliderBottom) {
+    if (scrollPosition >= sliderBottom-100 && scrollPosition <= sliderBottom) {
       // Eğer sayfa slider'ın sınırları içindeyse, klavye ve fare olaylarını dinleyin
-      document.addEventListener('keydown', handleKeyboard);
-      document.addEventListener('wheel', handleMouseWheel);
+    //   document.addEventListener('keydown', handleKeyboard);
+    //   document.addEventListener('wheel', handleMouseWheel);
     // swiperImage.controller.control = swiperText;
     // swiperText.controller.control = swiperImage;
- 
+ console.log('asdf')
     } else {
       // Sayfa slider'ın sınırları dışındaysa, klavye ve fare olaylarını kaldırın
-      document.removeEventListener('keydown', handleKeyboard);
-      document.removeEventListener('wheel', handleMouseWheel);
+    //   document.removeEventListener('keydown', handleKeyboard);
+    //   document.removeEventListener('wheel', handleMouseWheel);
    
     }
+    
+    prevscrollPosition = scrollPosition;
+    const calcTop = document.querySelector('.calculator-container').offsetTop;
+    const calcBottom = calcTop + 50;
+    
+    console.log(calcBottom)
+    if(dif<0 && scrollPosition >= calcTop && scrollPosition <= calcBottom){
+        // console.log('oldu');
+        const otherSection = document.getElementById('home-benef-cont');
+        otherSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+
 })
 
 
@@ -154,30 +168,30 @@ window.addEventListener('scroll', function() {
 
 
 
-swiperImage.on('slideChange', function (e) {
-    var activeSlide = swiperImage.slides[swiperImage.activeIndex];
-    // activeSlide.style.height='150px'
-    var span = activeSlide.querySelector('.home-benefit-head-context-title');
-    span.style.fontSize = '40px';
-    span.style.opacity = 1;
-    var all_div = activeSlide.querySelector('.home-benefit-head');
-    all_div.style.opacity = 1;
-    var all_div_text = activeSlide.querySelector('.home-benefit-head-context-title-text');
-    all_div_text.style.visibility = 'visible';
+// swiperImage.on('slideChange', function (e) {
+//     var activeSlide = swiperImage.slides[swiperImage.activeIndex];
+//     // activeSlide.style.height='150px'
+//     var span = activeSlide.querySelector('.home-benefit-head-context-title');
+//     // span.style.fontSize = '40px';
+//     span.style.opacity = 1;
+//     var all_div = activeSlide.querySelector('.home-benefit-head');
+//     all_div.style.opacity = 1;
+//     var all_div_text = activeSlide.querySelector('.home-benefit-head-context-title-text');
+//     all_div_text.style.visibility = 'visible';
 
 
-    var previousSlide = swiperImage.slides[swiperImage.previousIndex];
-    // previousSlide.style.height='230px'
-    var previousSpan = previousSlide.querySelector('.home-benefit-head-context-title');
-    previousSpan.style.fontSize = '20px';
-    previousSpan.style.opacity = 0.3;
-    var all_div_some = previousSlide.querySelector('.home-benefit-head');
-    all_div_some.style.opacity = 0.3;
-    var all_div_text1 = previousSlide.querySelector('.home-benefit-head-context-title-text');
-    all_div_text1.style.visibility = 'hidden';
+//     var previousSlide = swiperImage.slides[swiperImage.previousIndex];
+//     // previousSlide.style.height='230px'
+//     var previousSpan = previousSlide.querySelector('.home-benefit-head-context-title');
+//     // previousSpan.style.fontSize = '20px';
+//     previousSpan.style.opacity = 0.3;
+//     var all_div_some = previousSlide.querySelector('.home-benefit-head');
+//     all_div_some.style.opacity = 0.3;
+//     var all_div_text1 = previousSlide.querySelector('.home-benefit-head-context-title-text');
+//     all_div_text1.style.visibility = 'hidden';
 
 
-});
+// });
 
 
 
