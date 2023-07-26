@@ -831,7 +831,7 @@ margin: auto;
 }
 .general-plan .gen-plan-img{
   background-image: url('../images/11.jpg');
-  height: 722px;
+  height: 860px;
   background-size: cover;
   position: relative;
   margin-top: 20px;
@@ -923,17 +923,27 @@ opacity: 1;
   color: white;
 }
 .general-plan .gen-plan-img .target-plan{
-  position: absolute;
-  left: 383px;
-  top: 442px;
-  width: 84px;
-  height: 203px;
-  clip-path: polygon(-89px 111px, 67% 13%, 221% 61%, -4px 113%);
-  transition: background-color 0.3s ease 0s;
-  opacity: 0.9;
+  /* position: absolute;
+    left: 450px;
+    top: 515px;
+    width: 84px;
+    height: 237px;
+    clip-path: polygon(-161px 138px, 202% -6%, 221% 59%, 82% 114%);
+    transition: background-color 0.3s ease 0s;
+    transform: rotate(-5deg);
+    opacity: 1; */
+    position: absolute;
+    left: 453px;
+    top: 522px;
+    width: 106px;
+    height: 237px;
+    clip-path: polygon(-158px 113px, 79% 10%, 200% 73%, -5% 124%);
+    transition: background-color 0.3s ease 0s;
+    transform: rotate(-3deg);
+    opacity: 1;
 }
 .general-plan .gen-plan-img .card{
-  height: 324px !important;
+  height: 297px !important;
 }
 .general-plan .plan2-div{
   position: absolute;
@@ -949,8 +959,8 @@ opacity: 1;
 }
 .general-plan .plan-building1{
   position: absolute;
-  left: 55px;
-  top: 170px;
+  left: 103px;
+  top: 404px;
   display: none;
   border-radius: 20px;
   padding-bottom: 0px;
@@ -987,7 +997,7 @@ margin: 0px;
 font-weight: 500;
 }
 .general-plan .gen-plan-img .target-plan:hover{
-  background-color: rgba(0,123,251,.24);
+  background-color: rgba(0, 123, 251, 0.50);
   border: 1px solid rgba(2, 58, 117, 0.24) ;
 }
 .target-plan:hover + .plan-building1 {
@@ -1021,13 +1031,15 @@ font-weight: 500;
 }
 .general-plan .gen-plan-img .target-plan2{
   position: absolute;
-    left: 729px;
-    bottom: 3px;
-    width: 97px;
-    height: 199px;
-    transition: all 0.5s ease 0s;
-    background-color: rgba(0, 123, 251, 0.24);
-    opacity: 0;
+  left: 729px;
+  bottom: 6px;
+  width: 112px;
+  height: 270px;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(0, 123, 251, 0.5);
+  clip-path: polygon(-168px 133px, 88% 2%, 312% 107%, -363% 57%);
+  opacity: 0;
+
 }
 .general-plan  .card-body{
   padding: 0px;
@@ -1040,7 +1052,7 @@ font-weight: 500;
 .general-plan .plan-building2{
   position: absolute;
   bottom: 120px;
-  right: 87px;
+  right: 275px;
   display: none;
 }
 .general-plan .gen-plan-img .target-plan2:hover + .plan-building2 {
@@ -1095,19 +1107,20 @@ font-weight: 500;
 }
 .gen-plan-img .plan-building3{
   position: absolute;
-    right: 343px;
+    right:445px;
     display: none;
     bottom: 141px;
 }
 .gen-plan-img .target-plan3{
   position: absolute;
-  left: 469px;
-  bottom: 58px;
-  width: 102px;
-  height: 161px;
+  left: 543px;
+  bottom: 90px;
+  width: 121px;
+  height: 239px;
   transition: all 0.5s ease 0s;
-  background-color: rgba(0, 123, 251, 0.24);
+  background-color: rgba(0, 123, 251, 0.50);
   transform: rotate(-1deg);
+  clip-path: polygon(-168px 133px, 48% 14%, 238% 53%, 0% 120%);
   opacity: 0;
 }
 .gen-plan-img .target-plan3:hover{
