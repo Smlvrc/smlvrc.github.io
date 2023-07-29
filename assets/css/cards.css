@@ -59,7 +59,7 @@ height: 100%;
   margin-right: 20px;
 }
 .nav-link.active{
-  background-color: #5a998d !important;
+  background-color: #5a998d ;
 }
 .nav-tabs .nav-link{
   color:#2a5b6c;
@@ -923,24 +923,15 @@ opacity: 1;
   color: white;
 }
 .general-plan .gen-plan-img .target-plan{
-  /* position: absolute;
-    left: 450px;
-    top: 515px;
-    width: 84px;
-    height: 237px;
-    clip-path: polygon(-161px 138px, 202% -6%, 221% 59%, 82% 114%);
-    transition: background-color 0.3s ease 0s;
-    transform: rotate(-5deg);
-    opacity: 1; */
-    position: absolute;
-    left: 453px;
-    top: 522px;
-    width: 106px;
-    height: 237px;
-    clip-path: polygon(-158px 113px, 79% 10%, 200% 73%, -5% 124%);
-    transition: background-color 0.3s ease 0s;
-    transform: rotate(-3deg);
-    opacity: 1;
+  position: absolute;
+  left: 450px;
+  top: 522px;
+  width: 108px;
+  height: 237px;
+  clip-path: polygon(-158px 113px, 80% 6%, 200% 73%, 60% 105%);
+  transition: background-color 0.3s ease 0s;
+  transform: rotate(-3deg);
+  opacity: 1;
 }
 .general-plan .gen-plan-img .card{
   height: 297px !important;

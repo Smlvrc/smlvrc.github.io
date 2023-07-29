@@ -1,0 +1,53 @@
+
+  :root{
+    --main-color: #E2B98D;
+    --maincol2: #232323;
+  }
+  .adv-container .tab.active{
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: var(--main-color) !important;
+    border: none;
+    color: white;
+  }
+  .card-right-side .description a{
+    background-color: var(--maincol2) !important;
+    color: white;
+  }
+  .container-filter-rooms .obyekt-filter .right .card-content .obj-down a{
+    background-color: var(--maincol2) !important;
+    color: white;
+  }
+  .month-button.selected{
+    background-color: var(--main-color) !important;
+    color: white;
+  }
+  .map-container button{
+    background-color: var(--maincol2);
+  }
+  .other-projects .tags .v-tag{
+    background-color: var(--main-color);
+  }
+  .fa-play:before{
+    color: var(--maincol2);
+  }
+  .head-section .head-container .head-right .image-lazy{
+    background-color: #232323;
+    color: white;
+  }
+  .head-section .head-container .head-right .image-lazy .image-lazy-inner{
+    background-color: #4e4d4d !important;
+  }
+  .head-section .head-container .head-right .project-logo img{
+    height: 60px;
+    width: 120px;
+  }
+  .calculator .right-side{
+    background-color: var(--maincol2);
+  }
+  .calculator .left-side form .for-select-area .for-button button{
+    background-color: var(--main-color);
+  }
