@@ -3,17 +3,13 @@
     padding-top: 0px;
 }
 
-.navbar .container-fluid {
-    background-color: white !important;
-}
+
 
 header .navbar-expand-lg .navbar-collapse .me-auto li a {
     color: black;
 }
 
-header {
-    margin-bottom: 60px;
-}
+
 
 header .container-fluid .header-logo img {
     width: 130px;
@@ -709,6 +705,9 @@ flex-direction: column;
 justify-self:center;
 height: 100%;
 justify-content: space-evenly;
+}
+.fade:not(.show){
+    opacity: 1;
 }
 @media (max-width:970px) {
   .card-filter-detail .filter-detail-container{
