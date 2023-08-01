@@ -14,6 +14,7 @@ box-sizing: border-box;
   padding: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
+  margin-top: 40px;
  }
  :root{
   --head-text: "Prosto One",sans-serif;
@@ -30,12 +31,8 @@ box-sizing: border-box;
  header .icon span{
   color: black;
  }
-  .navbar .container-fluid{
-  background-color: #b9bbc0 !important;
- }
- header{
-  margin-bottom: 60px;
- }
+ 
+
  header .container-fluid .header-logo img {
 width: 96px; 
 }
@@ -534,7 +531,7 @@ align-items: start;
   margin-right: 25px;
 }
 header .navbar{
-  background-color: white;
+  
   margin: auto0;
 }
 .adv-container .slide img {

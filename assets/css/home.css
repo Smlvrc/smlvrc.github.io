@@ -1239,6 +1239,7 @@ footer a{
   border-bottom: 0px;
 }
 .allnews .nav-tabs li  a{
+  padding: 7px 13px 7px 13px;
   border-radius: 20px;
   border: 1px solid #cdd0db;
 }
@@ -1271,11 +1272,17 @@ color: white;
 .tab-content #menu1 .tab-down{
   background-color: #f4f7f9;}
 .tab-content-up{
+  
   padding: 40px;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-top: 60px;
 }
 .tab-content #home{
   padding: 40px;
   background-color: #f4f7f9;
+  padding-left: 10px;
+  padding-right: 0px;
 }
 .tab-content #home h3{
   padding-bottom: 40px;
@@ -1310,6 +1317,7 @@ color: white;
   width: 100%;
   margin: auto;
   padding: 0px;
+  max-width: 1250px;
 }
 
 .swiper-card{
@@ -1376,6 +1384,9 @@ padding-top: 30px;
   margin: auto;
   padding-bottom: 40px;
   padding-top: 50px;
+}
+.new-description {
+  margin-top: 80px;
 }
 .new-description .news-des-inner h5{
   font-size: 35px;
