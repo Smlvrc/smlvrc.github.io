@@ -1,3 +1,4 @@
+
 var swiperText = new Swiper(".home-benefits-image-slider", {
     slidesPerView: 1,
     initialSlide: 0,
@@ -138,7 +139,7 @@ window.addEventListener('scroll', function() {
       // Eğer sayfa slider'ın sınırları içindeyse, klavye ve fare olaylarını dinleyin
     //   document.addEventListener('keydown', handleKeyboard);
     //   document.addEventListener('wheel', handleMouseWheel);
-    // swiperImage.controller.control = swiperText;
+    // swiperImage.controller.contro l = swiperText;
     // swiperText.controller.control = swiperImage;
  console.log('asdf')
     } else {
