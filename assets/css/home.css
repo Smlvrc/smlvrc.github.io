@@ -996,7 +996,7 @@ height: 35px;
   top: 30px;
 border: 1px solid rgb(190, 190, 190);
 transform: rotate(180deg);
-right: 70px;
+right: 60px;
 }
 .swiper-button-next:after {
 font-size: 23px !important;
@@ -1007,6 +1007,13 @@ color: black;
 font-size: 23px !important;
 font-weight: bold !important;
 color: black;
+}
+.swiper-button-disabled{
+  border-color: #e8eaef;
+    background-color: #e8eaef;
+    color: #8d939d;
+    pointer-events: none;
+
 }
 .news-container .swiper-button-prev{
   position: absolute;
