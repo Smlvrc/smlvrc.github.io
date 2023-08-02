@@ -1472,7 +1472,12 @@ border-bottom-left-radius: 20px;
     max-width: 1250px;
     margin: auto;
 }
-
+.home-benefits .swiper-button-prev{
+  display: none;
+}
+.home-benefits .swiper-button-next{
+  display: none;
+}
 @media (max-width: 900px) {
   .home-benefits{
     flex-direction: column;
