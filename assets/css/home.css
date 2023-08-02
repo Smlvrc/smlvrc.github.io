@@ -1420,7 +1420,7 @@ color: #65676e;
 background-color: #f4f7f9;
 }
 .new-description  .documentation{
-  display: flex;
+  display: flex; 
   flex-direction: column;
   margin-top: 50px;
 }
