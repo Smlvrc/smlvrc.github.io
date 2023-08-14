@@ -534,19 +534,33 @@ align-items: center;
 }
 .card-filter-detail .detail-right-side{
     background-color: #6d7ca8;
+    width: 30%;
 }
  .detail-right-side .detail-right-innner{
-    background-color: white;
+   
 }
 .card-filter-detail .detail-right-side .inner-calculator{
     display: flex;
-    padding: 20px;
+    padding: 25px;
+    border-radius: 10px;
     width: 100%;
+ margin-bottom: 20px;
+ flex-wrap: wrap;
+   width: 100% !important;
     justify-content: space-between;
+    background-color: white;
 }
 .card-filter-detail .detail-right-side .inner-calculator label{
-    color:#203E65 ;
-    font-weight: bold;
+    color:#65676e ;
+    font-size: 0.9rem;
+    
+}
+.card-filter-detail .detail-right-side .inner-calculator select{
+    width: 100%;
+    border-radius: 7px;
+    border: 0.5px solid #b7b8bd;
+    height: 29px;
+    font-size: 14px;
 }
 /* card detail 2 */
 .month-button {
@@ -608,7 +622,7 @@ align-items: center;
       display: none;
   }
 .card-filter-detail .detail-right-side{
-  padding: 15px;
+  padding: 5px;
 }
 .card-filter-detail .detail-right-side .detail-text li{
   display: flex;
@@ -622,9 +636,14 @@ align-items: center;
  color: #203E65;
   margin: 5px 0px 5px 0px;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
 }
 .card-filter-detail .detail-right-side .detail-right-innner {
 width: 80%;
+}
+.card-filter-detail {
+    font-family: 'Roboto', sans-serif;
 }
 .card-filter-detail .detail-right-side .detail-right-innner .price{
  width: 100% !important;
@@ -632,6 +651,7 @@ width: 80%;
  align-items: center;
  justify-content: center;
   margin: 0px;
+  margin-top: 35px;
   width: max-content;
 }
 .card-filter-detail .detail-right-side .detail-right-innner .inner-calculator .percent{
@@ -640,16 +660,27 @@ width: 80%;
 
 .card-filter-detail .detail-right-side .detail-right-innner h4{
     padding-left: 10px;
+    font-weight: bold;
+    
+}
+.card-filter-detail .detail-right-side .detail-right-innner h4 span{
+    font-size: 20px;
 }
 .card-filter-detail .detail-right-side .detail-right-innner .price .price-inner{
-    padding: 15px;
-    background-color: blue;
+  height: 45px;
+    background-color: #5a998d  !important;
     color: white;
-    border-radius: 20px;
+width: 100%;
+border-radius: 10px;
+
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .card-filter-detail .detail-right-side .detail-right-innner .price .price-inner span{
     color: white;
     font-weight: bold;
+    font-size: 18px;
 }
 .card-filter-detail .detail-right-side .detail-right-innner h3 span:nth-child(1){
 font-size: 36px;
@@ -683,9 +714,11 @@ font-weight: 400;
 }
 .card-filter-detail .detail-right-side .detail-text{
   padding: 30px;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-bottom: 0px;
-  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
 }
 .card-filter-detail .detail-right-side .detail-text-down li{
   display: flex  ;
@@ -694,17 +727,22 @@ font-weight: 400;
   color: #203E65;
 }
 .card-filter-detail .detail-right-side .detail-text-down{
-padding: 30px;
+
 margin: 0px;
 }
 
 .card-filter-detail .detail-right-side .detail-right-innner{
-background-color: white;
+padding-top: 25px;
+padding-bottom: 25px;
+border-radius: 10px;
+margin: 30px;
 display: flex;
 flex-direction: column;
 justify-self:center;
 height: 100%;
+
 justify-content: space-evenly;
+width: 100%;
 }
 .fade:not(.show){
     opacity: 1;

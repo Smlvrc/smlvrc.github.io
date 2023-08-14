@@ -598,9 +598,9 @@ margin: 40px auto 40px;
   justify-content: space-between;
 }
 .calculator .row .for-select select{
-  height: 41px;
+
   color: #656565;
-  width: 100%;
+  
   border-radius: 6px;
 }
 main .left-side form .for-select-area
@@ -681,7 +681,7 @@ justify-content: space-between;
   background:#2D6478;
   border-radius: 10px;
   color: white;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
